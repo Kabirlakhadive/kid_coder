@@ -1,0 +1,11 @@
+{
+  "chapters": [
+    {
+      "chapter 1": {
+        "icon": "book",
+        "color": "#ff0000",
+        "levels": "10"
+      }
+    }
+  ]
+}
