@@ -1,0 +1,64 @@
+{
+  "list of levels": [
+    {
+      "levelNumber": 1,
+      "chapterNumber": 1,
+      "levelType": "explainer",
+      "levelUnlocked": true,
+      "questions": [
+        {
+          "questionType": "explainer",
+          "content": "Coding is the process of giving instructions to a computer using programming languages."
+        }
+      ]
+    },
+    {
+      "levelNumber": 2,
+      "chapterNumber": 1,
+      "levelType": "mcq",
+      "levelUnlocked": false,
+      "questions": [
+        {
+          "questionType": "mcq",
+          "questionText": "Which of these is a programming language?",
+          "options": ["HTML", "CSS", "Python", "Photoshop"],
+          "correctAnswer": "Python",
+          "explanation": "Python is a programming language, others are not."
+        },
+        {
+          "questionType": "mcq",
+          "questionText": "What does code do?",
+          "options": [
+            "Decorates websites",
+            "Instructs the computer",
+            "Designs logos",
+            "None"
+          ],
+          "correctAnswer": "Instructs the computer"
+        }
+      ]
+    },
+    {
+      "levelNumber": 4,
+      "chapterNumber": 2,
+      "levelType": "code",
+      "levelUnlocked": false,
+      "questions": [
+        {
+          "questionType": "code",
+          "questionText": "Write a program to print 'Hello World'.",
+          "language": "Python",
+          "starterCode": "print(",
+          "expectedOutput": "Hello World",
+          "correctCode": "print('Hello World')"
+        },
+        {
+          "questionType": "mcq",
+          "questionText": "What function is used to print in Python?",
+          "options": ["echo", "console.log", "printf", "print"],
+          "correctAnswer": "print"
+        }
+      ]
+    }
+  ]
+}

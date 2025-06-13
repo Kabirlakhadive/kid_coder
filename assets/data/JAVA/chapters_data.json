@@ -1,0 +1,18 @@
+[
+  {
+    "chapterNumber": 1,
+    "title": "Basics of Coding",
+    "description": "Introduction to what coding is",
+    "color": "#8E44AD",
+    "chapterUnlocked": true,
+    "levels": [1, 2, 3]
+  },
+  {
+    "chapterNumber": 2,
+    "title": "Programming Languages",
+    "description": "Understanding different languages",
+    "color": "#3498DB",
+    "chapterUnlocked": false,
+    "levels": [4, 5, 6]
+  }
+]
