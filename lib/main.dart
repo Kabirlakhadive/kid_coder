@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.amber,
-          brightness: Brightness.light,
+          brightness: Brightness.dark,
         ),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),

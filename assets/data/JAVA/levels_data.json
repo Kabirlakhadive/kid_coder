@@ -1,22 +1,32 @@
 {
-  "list of levels": [
+  "listOfLevels": [
     {
       "levelNumber": 1,
       "chapterNumber": 1,
       "levelType": "explainer",
       "levelUnlocked": true,
+      "levelDescription": "This is level 1: Introduction to coding.",
       "questions": [
         {
           "questionType": "explainer",
           "content": "Coding is the process of giving instructions to a computer using programming languages."
+        },
+        {
+          "questionType": "explainer",
+          "content": "Coding is how we talk to computers and make them do things."
+        },
+        {
+          "questionType": "explainer",
+          "content": "Just like you can read and write in English, you can code in any programming language."
         }
       ]
     },
     {
       "levelNumber": 2,
       "chapterNumber": 1,
-      "levelType": "mcq",
+      "levelType": "explainer",
       "levelUnlocked": false,
+      "levelDescription": "Introduction to coding.",
       "questions": [
         {
           "questionType": "mcq",
@@ -39,10 +49,11 @@
       ]
     },
     {
-      "levelNumber": 4,
+      "levelNumber": 3,
       "chapterNumber": 2,
       "levelType": "code",
       "levelUnlocked": false,
+      "levelDescription": "Introduction to coding.",
       "questions": [
         {
           "questionType": "code",
