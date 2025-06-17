@@ -19,7 +19,7 @@ class LevelTile extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 60,
-        width: 60,
+        width: 80,
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
@@ -27,7 +27,7 @@ class LevelTile extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: shadowColor,
-              offset: const Offset(0, 6),
+              offset: const Offset(0, 4),
               blurRadius: 0,
             ),
           ],

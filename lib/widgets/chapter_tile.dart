@@ -16,7 +16,7 @@ class ChapterTile extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.blue[800]!,
-            offset: const Offset(0, 6),
+            offset: const Offset(0, 4),
             blurRadius: 0,
           ),
         ],

@@ -18,7 +18,7 @@ class ExplainerWidget extends StatelessWidget {
                 width: double.infinity,
                 margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Colors.grey[200],
+                  // color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
@@ -34,12 +34,16 @@ class ExplainerWidget extends StatelessWidget {
                 ),
               ),
             ),
+            Divider(
+              color: Colors.grey[400],
+              thickness: 1,
+            ),
             Expanded(
               child: Container(
                 width: double.infinity,
                 margin: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Colors.blue[400],
+                  // color: Colors.grey[400],
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(

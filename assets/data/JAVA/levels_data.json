@@ -5,14 +5,14 @@
       "chapterNumber": 1,
       "levelType": "explainer",
       "levelUnlocked": true,
-      "levelDescription": "This is level 1: Introduction to coding.",
+      "levelDescription": "Introduction to coding.",
       "questions": [
         {
           "questionType": "explainer",
           "content": "Coding is the process of giving instructions to a computer using programming languages."
         },
         {
-          "questionType": "explainer",
+          "questionType": "mcq",
           "content": "Coding is how we talk to computers and make them do things."
         },
         {
@@ -26,18 +26,19 @@
       "chapterNumber": 1,
       "levelType": "explainer",
       "levelUnlocked": false,
-      "levelDescription": "Introduction to coding.",
+      "levelDescription": "What is a programming language?",
       "questions": [
         {
           "questionType": "mcq",
-          "questionText": "Which of these is a programming language?",
+          "content": "Which of these is a programming language?",
           "options": ["HTML", "CSS", "Python", "Photoshop"],
           "correctAnswer": "Python",
           "explanation": "Python is a programming language, others are not."
+          
         },
         {
           "questionType": "mcq",
-          "questionText": "What does code do?",
+          "content": "What does code do?",
           "options": [
             "Decorates websites",
             "Instructs the computer",
@@ -57,7 +58,7 @@
       "questions": [
         {
           "questionType": "code",
-          "questionText": "Write a program to print 'Hello World'.",
+          "content": "Write a program to print 'Hello World'.",
           "language": "Python",
           "starterCode": "print(",
           "expectedOutput": "Hello World",
@@ -65,7 +66,7 @@
         },
         {
           "questionType": "mcq",
-          "questionText": "What function is used to print in Python?",
+          "content": "What function is used to print in Python?",
           "options": ["echo", "console.log", "printf", "print"],
           "correctAnswer": "print"
         }
