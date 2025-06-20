@@ -43,9 +43,9 @@ class LevelInterruptWindow extends StatelessWidget {
               children: [
                 Expanded(
                   child: ButtonWidget(
-                    color: Colors.grey[700]!,
+                    color: Colors.blue[700]!,
                     text: 'Cancel',
-                    shadowColor: Colors.grey[900]!,
+                    shadowColor: Colors.blue[900]!,
                     onPressed: onCancel,
                   ),
                 ),

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:kid_coder/Pages/level_page.dart';
+import 'package:kid_coder/Pages/Sub%20Pages/level_page.dart';
 import 'package:kid_coder/widgets/chapter_tile.dart';
 import 'package:kid_coder/widgets/level_tile.dart';
 import 'package:kid_coder/widgets/level_start_window.dart';
@@ -244,6 +244,11 @@ class _HomePageState extends State<HomePage> {
                 child: LevelStartWindow(
                   levelDescription: _selectedLevelData!["levelDescription"],
                   onStart: _startLevel,
+                  onClose: () {
+                    setState(() {
+                      _showStartWindow = false;
+                    });
+                  },
                 ),
               ),
             ),

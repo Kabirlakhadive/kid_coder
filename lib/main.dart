@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kid_coder/Pages/achievements_page.dart';
-import 'package:kid_coder/Pages/chapters_page.dart';
-import 'package:kid_coder/Pages/home_page.dart';
-import 'package:kid_coder/Pages/settings_page.dart';
+import 'package:kid_coder/Pages/Main%20Pages/achievements_page.dart';
+import 'package:kid_coder/Pages/Main%20Pages/chapters_page.dart';
+import 'package:kid_coder/Pages/Main%20Pages/home_page.dart';
+import 'package:kid_coder/Pages/Main%20Pages/settings_page.dart';
 import 'widgets/bottom_nav_bar.dart';
 
 void main() {

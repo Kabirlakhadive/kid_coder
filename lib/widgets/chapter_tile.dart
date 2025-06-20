@@ -10,18 +10,25 @@ class ChapterTile extends StatelessWidget {
       height: 60,
       width: double.infinity,
       margin: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: Colors.blue[400],
-        borderRadius: BorderRadius.circular(10),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.blue[800]!,
-            offset: const Offset(0, 4),
-            blurRadius: 0,
+      child: Row(
+        children: [
+          Expanded(
+            child: Divider(
+              color: Colors.grey,
+              thickness: 1,
+              endIndent: 10,
+            ),
+          ),
+          Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
+          Expanded(
+            child: Divider(
+              color: Colors.grey,
+              thickness: 1,
+              indent: 10,
+            ),
           ),
         ],
       ),
-      child: Center(child: Text(title)),
     );
   }
 }
