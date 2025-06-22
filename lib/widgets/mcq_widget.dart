@@ -5,12 +5,14 @@ class McqWidget extends StatefulWidget {
   final List<String> options;
   final String correctAnswer;
   final String? explanation;
+  final VoidCallback? onAnswered;
   const McqWidget({
     super.key,
     required this.question,
     required this.options,
     required this.correctAnswer,
     this.explanation,
+    this.onAnswered,
   });
 
   @override
@@ -26,6 +28,7 @@ class _McqWidgetState extends State<McqWidget> {
     setState(() {
       _selectedOption = option;
       _answered = true;
+      if (widget.onAnswered != null) widget.onAnswered!();
     });
   }
 

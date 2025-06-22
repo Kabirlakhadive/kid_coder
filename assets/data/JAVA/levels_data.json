@@ -91,6 +91,12 @@
           "content": "If `score = 50` and then we say `score = 75`, what is the new value in `score`?",
           "options": ["50", "75", "125"],
           "correctAnswer": "75"
+        },
+        {
+          "questionType": "arrange",
+          "content": "Write a Python statement to print 'Hello World'",
+          "options": ["Create a box", "Give it a name", "Put something inside", "Print the box"],
+          "correctAnswer": ["Create a box", "Give it a name", "Put something inside", "Print the box"]
         }
       ]
     },

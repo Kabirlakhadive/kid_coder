@@ -8,6 +8,7 @@ import 'package:kid_coder/widgets/mcq_widget.dart';
 import 'package:kid_coder/widgets/level_interrupt_window.dart';
 import 'package:kid_coder/widgets/level_end_window.dart';
 import 'package:kid_coder/widgets/code_widget.dart';
+import 'package:kid_coder/widgets/arrange_widget.dart';
 
 class LevelPage extends StatefulWidget {
   final int level;
@@ -27,6 +28,7 @@ class _LevelPageState extends State<LevelPage> {
   // Dialog state
   bool _showInterruptWindow = false;
   bool _showEndWindow = false;
+  bool _mcqAnswered = false;
 
   @override
   void initState() {
@@ -42,6 +44,9 @@ class _LevelPageState extends State<LevelPage> {
   }
 
   void _scrollToNext() {
+    setState(() {
+      _mcqAnswered = false;
+    });
     if (_currentIndex < _totalItems - 1) {
       setState(() {
         _currentIndex++;
@@ -179,6 +184,11 @@ class _LevelPageState extends State<LevelPage> {
                                       options: options,
                                       correctAnswer: correctAnswer,
                                       explanation: explanation,
+                                      onAnswered: () {
+                                        setState(() {
+                                          _mcqAnswered = true;
+                                        });
+                                      },
                                     ),
                                   );
                                 } else if (questionType == "code") {
@@ -189,6 +199,25 @@ class _LevelPageState extends State<LevelPage> {
                                       ...currentLevel,
                                       'questions': [question],
                                     }),
+                                  );
+                                } else if (questionType == "arrange") {
+                                  final content = question["content"] ?? "";
+                                  final options = (question["options"] as List?)?.cast<String>() ?? [];
+                                  final correctOrder = (question["correctAnswer"] as List?)?.cast<String>() ?? [];
+                                  final explanation = question["explanation"];
+                                  return SizedBox(
+                                    width: MediaQuery.of(context).size.width,
+                                    child: ArrangeWidget(
+                                      prompt: content,
+                                      tokens: options,
+                                      correctOrder: correctOrder,
+                                      explanation: explanation,
+                                      onAnswered: () {
+                                        setState(() {
+                                          _mcqAnswered = true;
+                                        });
+                                      },
+                                    ),
                                   );
                                 } else {
                                   // fallback for unknown type
@@ -210,11 +239,26 @@ class _LevelPageState extends State<LevelPage> {
                       bottom: 20,
                       left: 20,
                       right: 20,
-                      child: ButtonWidget(
-                        color: Colors.green[500]!,
-                        text: _currentIndex == _totalItems - 1 ? "Finish" : "Next",
-                        shadowColor: Colors.green[800]!,
-                        onPressed: _scrollToNext,
+                      child: Builder(
+                        builder: (context) {
+                          final question = currentLevelQuestions[_currentIndex];
+                          final questionType = question["questionType"];
+                          final isMcq = questionType == "mcq";
+                          final isArrange = questionType == "arrange";
+                          final nextEnabled = (!isMcq && !isArrange) || _mcqAnswered;
+                          return Opacity(
+                            opacity: nextEnabled ? 1.0 : 0.5,
+                            child: IgnorePointer(
+                              ignoring: !nextEnabled,
+                              child: ButtonWidget(
+                                color: Colors.green[500]!,
+                                text: _currentIndex == _totalItems - 1 ? "Finish" : "Next",
+                                shadowColor: Colors.green[800]!,
+                                onPressed: _scrollToNext,
+                              ),
+                            ),
+                          );
+                        },
                       ),
                     ),
                   // Interrupt window overlay
