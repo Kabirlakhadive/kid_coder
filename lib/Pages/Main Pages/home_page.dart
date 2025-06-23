@@ -184,21 +184,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     const List<double> alignmentPattern = [  
-      0.566,
+      0.466,
       0.0,
-      -0.566,
-      -0.8,
-      -0.566,
+      -0.466,
+      -0.7,
+      -0.466,
       0.0,
-      0.566,
-      0.8,
+      0.466,
+      0.7,
     ];
 
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text('Homepage'),
+        title: const Text(' '),
       ),
       body: Stack(
         children: [
@@ -219,10 +219,18 @@ class _HomePageState extends State<HomePage> {
                 });
                 return Column(
                   children: [
-                    ChapterTitleTile(
-                      chapterNumber: _currentChapter,
-                      title: _currentChapterTitle,
-                      color: _getChapterColor(_currentChapterColor),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
+                      padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 2),
+                      child: ChapterTitleTile(
+                        chapterNumber: _currentChapter,
+                        title: _currentChapterTitle,
+                        color: _getChapterColor(_currentChapterColor),
+                      ),
                     ),
                     Expanded(
                       child: Center(
@@ -235,7 +243,10 @@ class _HomePageState extends State<HomePage> {
                               final tileData = tiles[index];
                               final String type = tileData['type'];
                               if (type == 'chapter') {
-                                return ChapterTile(title: tileData['title']);
+                                return Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
+                                  child: ChapterTile(title: tileData['title']),
+                                );
                               } else {
                                 final levelType = tileData['levelType'];
                                 final patternIndex = index % alignmentPattern.length;
@@ -262,16 +273,19 @@ class _HomePageState extends State<HomePage> {
                                   imageAsset = 'assets/images/level_tiles/level_tile_grey.png';
                                   onTap = () {};
                                 }
-                                return Align(
-                                  alignment: Alignment(alignmentX, 0),
-                                  child: LevelTile(
-                                    icon: levelType == 'explainer'
-                                        ? Icons.book
-                                        : levelType == 'mcq'
-                                            ? Icons.help_outline_rounded
-                                            : Icons.code,
-                                    onTap: onTap,
-                                    imageAsset: imageAsset,
+                                return Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
+                                  child: Align(
+                                    alignment: Alignment(alignmentX, 0),
+                                    child: LevelTile(
+                                      icon: levelType == 'explainer'
+                                          ? Icons.book
+                                          : levelType == 'mcq'
+                                              ? Icons.help_outline_rounded
+                                              : Icons.code,
+                                      onTap: onTap,
+                                      imageAsset: imageAsset,
+                                    ),
                                   ),
                                 );
                               }

@@ -16,25 +16,23 @@ class LevelTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: SizedBox(
-        height: 80,
-        width: 80,
+        height: 72,
+        width: 72,
         child: Stack(
           alignment: Alignment.center,
           children: [
             // Background image
             Positioned.fill(
-              child: ClipOval(
-                child: Image.asset(
-                  imageAsset,
-                  fit: BoxFit.cover,
-                ),
+              child: Image.asset(
+                imageAsset,
+                fit: BoxFit.cover,
               ),
             ),
             // Icon overlay
             Icon(
               icon,
               color: Colors.white,
-              size: 30,
+              size: 32,
               shadows: [
                 BoxShadow(
                   color: Colors.grey[400]!,
