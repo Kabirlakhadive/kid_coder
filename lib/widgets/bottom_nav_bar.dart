@@ -23,10 +23,10 @@ class BottomNavBar extends StatelessWidget {
       ],
       currentIndex: selectedIndex,
       selectedItemColor: Colors.amber[200],
-      unselectedItemColor: Colors.black,
+      unselectedItemColor: Colors.white,
       onTap: onTap,
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Colors.transparent,
     );
   }
 }

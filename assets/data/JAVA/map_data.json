@@ -3,240 +3,86 @@
     {
       "type": "chapter",
       "chapter": 1,
-      "title": "Chapter 1: The First Steps",
+      "title": "The First Steps",
       "color": "blue",
       "numberOfLevels": 14
     },
-    {
-      "type": "level",
-      "level": 1,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "explainer",
-      "isUnlocked": true
-    },
-    {
-      "type": "level",
-      "level": 2,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "explainer",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 3,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 4,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 5,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 6,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 7,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "code",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 8,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 9,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 10,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "code",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 11,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 12,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 13,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 14,
-      "chapter": 1,
-      "color": "blue",
-      "levelType": "code",
-      "isUnlocked": false
-    },
+    { "type": "level", "level": 1, "chapter": 1, "color": "blue", "levelType": "explainer", "isUnlocked": true },
+    { "type": "level", "level": 2, "chapter": 1, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 3, "chapter": 1, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 4, "chapter": 1, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 5, "chapter": 1, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 6, "chapter": 1, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 7, "chapter": 1, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 8, "chapter": 1, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 9, "chapter": 1, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 10, "chapter": 1, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 11, "chapter": 1, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 12, "chapter": 1, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 13, "chapter": 1, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 14, "chapter": 1, "color": "blue", "levelType": "code", "isUnlocked": false },
     {
       "type": "chapter",
       "chapter": 2,
-      "title": "Chapter 2: Making Decisions",
+      "title": "Making Decisions",
       "color": "green",
       "numberOfLevels": 14
     },
+    { "type": "level", "level": 15, "chapter": 2, "color": "green", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 16, "chapter": 2, "color": "green", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 17, "chapter": 2, "color": "green", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 18, "chapter": 2, "color": "green", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 19, "chapter": 2, "color": "green", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 20, "chapter": 2, "color": "green", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 21, "chapter": 2, "color": "green", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 22, "chapter": 2, "color": "green", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 23, "chapter": 2, "color": "green", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 24, "chapter": 2, "color": "green", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 25, "chapter": 2, "color": "green", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 26, "chapter": 2, "color": "green", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 27, "chapter": 2, "color": "green", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 28, "chapter": 2, "color": "green", "levelType": "code", "isUnlocked": false },
     {
-      "type": "level",
-      "level": 15,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "explainer",
-      "isUnlocked": false
+      "type": "chapter",
+      "chapter": 3,
+      "title": "Repeating Actions",
+      "color": "red",
+      "numberOfLevels": 14
     },
+    { "type": "level", "level": 29, "chapter": 3, "color": "red", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 30, "chapter": 3, "color": "red", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 31, "chapter": 3, "color": "red", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 32, "chapter": 3, "color": "red", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 33, "chapter": 3, "color": "red", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 34, "chapter": 3, "color": "red", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 35, "chapter": 3, "color": "red", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 36, "chapter": 3, "color": "red", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 37, "chapter": 3, "color": "red", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 38, "chapter": 3, "color": "red", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 39, "chapter": 3, "color": "red", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 40, "chapter": 3, "color": "red", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 41, "chapter": 3, "color": "red", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 42, "chapter": 3, "color": "red", "levelType": "code", "isUnlocked": false },
     {
-      "type": "level",
-      "level": 16,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
+      "type": "chapter",
+      "chapter": 4,
+      "title": "Organizing Code",
+      "color": "blue",
+      "numberOfLevels": 14
     },
-    {
-      "type": "level",
-      "level": 17,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 18,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 19,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "code",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 20,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 21,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "explainer",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 22,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 23,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 24,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "code",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 25,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 26,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 27,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "code",
-      "isUnlocked": false
-    },
-    {
-      "type": "level",
-      "level": 28,
-      "chapter": 2,
-      "color": "green",
-      "levelType": "mcq",
-      "isUnlocked": false
-    }
+    { "type": "level", "level": 43, "chapter": 4, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 44, "chapter": 4, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 45, "chapter": 4, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 46, "chapter": 4, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 47, "chapter": 4, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 48, "chapter": 4, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 49, "chapter": 4, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 50, "chapter": 4, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 51, "chapter": 4, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 52, "chapter": 4, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 53, "chapter": 4, "color": "blue", "levelType": "explainer", "isUnlocked": false },
+    { "type": "level", "level": 54, "chapter": 4, "color": "blue", "levelType": "code", "isUnlocked": false },
+    { "type": "level", "level": 55, "chapter": 4, "color": "blue", "levelType": "mcq", "isUnlocked": false },
+    { "type": "level", "level": 56, "chapter": 4, "color": "blue", "levelType": "code", "isUnlocked": false }
   ]
 }

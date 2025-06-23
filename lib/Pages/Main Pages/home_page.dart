@@ -6,6 +6,7 @@ import 'package:kid_coder/widgets/chapter_tile.dart';
 import 'package:kid_coder/widgets/level_tile.dart';
 import 'package:kid_coder/widgets/level_start_window.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:kid_coder/widgets/chapter_title_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -28,6 +29,11 @@ class _HomePageState extends State<HomePage> {
   // Store tiles in state for mutation
   List<dynamic> _tiles = [];
 
+  final ScrollController _scrollController = ScrollController();
+  int _currentChapter = 1;
+  String _currentChapterTitle = '';
+  String _currentChapterColor = 'blue';
+
   @override
   void initState() {
     super.initState();
@@ -35,6 +41,52 @@ class _HomePageState extends State<HomePage> {
     _mapDataFuture = _loadMapData();
     _levelsDataFuture = _loadLevelsData();
     _loadUnlocks();
+    _scrollController.addListener(_onScroll);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    if (_tiles.isEmpty) return;
+    // Estimate the first visible item index
+    final itemHeight = 56.0 + 20.0; // LevelTile height + margin
+    final offset = _scrollController.offset;
+    int firstVisibleIndex = (offset / itemHeight).floor();
+    if (firstVisibleIndex < 0) firstVisibleIndex = 0;
+    if (firstVisibleIndex >= _tiles.length) firstVisibleIndex = _tiles.length - 1;
+    // Find the nearest level tile from the first visible index
+    for (int i = firstVisibleIndex; i >= 0; i--) {
+      final tile = _tiles[i];
+      if (tile['type'] == 'level') {
+        final chapter = tile['chapter'] as int;
+        if (chapter != _currentChapter) {
+          final chapterTile = _tiles.firstWhere((t) => t['type'] == 'chapter' && t['chapter'] == chapter, orElse: () => null);
+          setState(() {
+            _currentChapter = chapter;
+            _currentChapterTitle = chapterTile != null ? chapterTile['title'] : '';
+            _currentChapterColor = chapterTile != null ? chapterTile['color'] : 'blue';
+          });
+        }
+        break;
+      }
+    }
+  }
+
+  Color _getChapterColor(String colorName) {
+    switch (colorName) {
+      case 'blue':
+        return Colors.blue[700]!;
+      case 'green':
+        return Colors.green[700]!;
+      case 'red':
+        return Colors.red[700]!;
+      default:
+        return Colors.grey[700]!;
+    }
   }
 
   Future<void> _loadUnlocks() async {
@@ -131,17 +183,17 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    const List<double> alignmentPattern = [
-      // A little off the edge
-      0.3,
+    const List<double> alignmentPattern = [  
+      0.566,
       0.0,
-      -0.4,
-      -0.7, // A little off the edge
-      -0.4,
+      -0.566,
+      -0.8,
+      -0.566,
       0.0,
-      0.5,
-      0.7,
+      0.566,
+      0.8,
     ];
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -151,92 +203,90 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           FutureBuilder<Map<String, dynamic>>(
-            // Use the state variable here
             future: _mapDataFuture,
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const Center(child: CircularProgressIndicator());
               }
-
               if (snapshot.hasError) {
                 return Center(child: Text('Error: ${snapshot.error}'));
               }
-
               if (snapshot.hasData) {
-                // Use _tiles from state
                 final tiles = _tiles;
-
-                return Center(
-                  child: SizedBox(
-                    width: 250,
-                    child: ListView.builder(
-                      // FIX: You must provide an itemCount.
-                      itemCount: tiles.length,
-                      itemBuilder: (context, index) {
-                        // final levelData = tiles[index];
-                        // final String type =
-                        //     levelData['levelType']; // <-- Now this is safe.
-                        final tileData = tiles[index];
-                        final String type = tileData['type'];
-                        if (type == 'chapter') {
-                          return ChapterTile(title: tileData['title']);
-                        } else {
-                          final levelType = tileData['levelType'];
-                          final patternIndex = index % alignmentPattern.length;
-                          final alignmentX = alignmentPattern[patternIndex];
-                          final color = tileData['color'];
-                          final isUnlocked = tileData['isUnlocked'] ?? false;
-
-                          Color tileColor;
-                          Color shadowColor;
-                          VoidCallback? onTap;
-
-                          if (isUnlocked) {
-                            tileColor = color == "blue"
-                                ? Colors.blue
-                                : color == "green"
-                                    ? Colors.green
-                                    : Colors.red;
-                            shadowColor = color == "blue"
-                                ? Colors.blue[800]!
-                                : color == "green"
-                                    ? Colors.green[800]!
-                                    : Colors.red[800]!;
-                            onTap = () => _showLevelStartWindow(
-                              levelType,
-                              tileData['level'],
-                            );
-                          } else {
-                            tileColor = Colors.grey;
-                            shadowColor = Colors.grey[700]!;
-                            onTap = () {};
-                          }
-
-                          return Align(
-                            alignment: Alignment(alignmentX, 0),
-                            child: LevelTile(
-                              icon: levelType == 'explainer'
-                                  ? Icons.book
-                                  : levelType == 'mcq'
-                                      ? Icons.help_outline_rounded
-                                      : Icons.code,
-                              onTap: onTap,
-                              color: tileColor,
-                              shadowColor: shadowColor,
-                            ),
-                          );
-                        }
-                      },
+                // Set initial chapter info based on the first visible level
+                WidgetsBinding.instance.addPostFrameCallback((_) {
+                  _onScroll();
+                });
+                return Column(
+                  children: [
+                    ChapterTitleTile(
+                      chapterNumber: _currentChapter,
+                      title: _currentChapterTitle,
+                      color: _getChapterColor(_currentChapterColor),
                     ),
-                  ),
+                    Expanded(
+                      child: Center(
+                        child: SizedBox(
+                          width: 250,
+                          child: ListView.builder(
+                            controller: _scrollController,
+                            itemCount: tiles.length,
+                            itemBuilder: (context, index) {
+                              final tileData = tiles[index];
+                              final String type = tileData['type'];
+                              if (type == 'chapter') {
+                                return ChapterTile(title: tileData['title']);
+                              } else {
+                                final levelType = tileData['levelType'];
+                                final patternIndex = index % alignmentPattern.length;
+                                final alignmentX = alignmentPattern[patternIndex];
+                                final color = tileData['color'];
+                                final isUnlocked = tileData['isUnlocked'] ?? false;
+                                VoidCallback? onTap;
+                                String imageAsset;
+                                if (isUnlocked) {
+                                  if (color == "blue") {
+                                    imageAsset = 'assets/images/level_tiles/level_tile_blue.png';
+                                  } else if (color == "green") {
+                                    imageAsset = 'assets/images/level_tiles/level_tile_green.png';
+                                  } else if (color == "red") {
+                                    imageAsset = 'assets/images/level_tiles/level_tile_red.png';
+                                  } else {
+                                    imageAsset = 'assets/images/level_tiles/level_tile_grey.png';
+                                  }
+                                  onTap = () => _showLevelStartWindow(
+                                    levelType,
+                                    tileData['level'],
+                                  );
+                                } else {
+                                  imageAsset = 'assets/images/level_tiles/level_tile_grey.png';
+                                  onTap = () {};
+                                }
+                                return Align(
+                                  alignment: Alignment(alignmentX, 0),
+                                  child: LevelTile(
+                                    icon: levelType == 'explainer'
+                                        ? Icons.book
+                                        : levelType == 'mcq'
+                                            ? Icons.help_outline_rounded
+                                            : Icons.code,
+                                    onTap: onTap,
+                                    imageAsset: imageAsset,
+                                  ),
+                                );
+                              }
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 );
               } else {
-                // This case handles when snapshot has no data.
                 return const Center(child: Text('No data found.'));
               }
             },
           ),
-          // Level start window overlay
           if (_showStartWindow && _selectedLevelData != null)
             Positioned.fill(
               child: Container(

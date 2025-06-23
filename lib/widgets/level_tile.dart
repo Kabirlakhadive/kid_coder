@@ -1,46 +1,47 @@
 import 'package:flutter/material.dart';
 
 class LevelTile extends StatelessWidget {
-  final Color shadowColor;
-  final Color color;
   final VoidCallback onTap;
   final IconData icon;
+  final String imageAsset;
   const LevelTile({
     super.key,
     required this.icon,
     required this.onTap,
-    required this.color,
-    required this.shadowColor,
+    required this.imageAsset,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-        height: 60,
+      child: SizedBox(
+        height: 80,
         width: 80,
-        margin: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: color,
-          boxShadow: [
-            BoxShadow(
-              color: shadowColor,
-              offset: const Offset(0, 4),
-              blurRadius: 0,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // Background image
+            Positioned.fill(
+              child: ClipOval(
+                child: Image.asset(
+                  imageAsset,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
-          ],
-        ),
-        child: Icon(
-          icon,
-          color: Colors.white,
-          size: 30,
-          shadows: [
-            BoxShadow(
-              color: Colors.grey[400]!,
-              offset: const Offset(0, 2),
-              blurRadius: 0,
+            // Icon overlay
+            Icon(
+              icon,
+              color: Colors.white,
+              size: 30,
+              shadows: [
+                BoxShadow(
+                  color: Colors.grey[400]!,
+                  offset: const Offset(0, 2),
+                  blurRadius: 0,
+                ),
+              ],
             ),
           ],
         ),

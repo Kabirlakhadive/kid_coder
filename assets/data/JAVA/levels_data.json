@@ -7,43 +7,14 @@
       "levelUnlocked": true,
       "levelDescription": "Introduction to what coding is and why it's cool.",
       "questions": [
-        {
-          "questionType": "explainer",
-          "content": "Welcome to CodeQuest! Let's learn how to talk to computers."
-        },
-        {
-          "questionType": "explainer",
-          "content": "Coding is like writing a set of instructions for a computer to follow."
-        },
-        {
-          "questionType": "explainer",
-          "content": "These instructions are called a 'program'."
-        },
-        {
-          "questionType": "mcq",
-          "content": "What is a set of instructions for a computer called?",
-          "options": ["A story", "A program", "A menu"],
-          "correctAnswer": "A program",
-          "explanation": "A program tells the computer exactly what to do, step-by-step."
-        },
-        {
-          "questionType": "explainer",
-          "content": "You use a 'programming language' to write these instructions, just like you use English to talk to friends."
-        },
-        {
-          "questionType": "mcq",
-          "content": "What do we use to write instructions for a computer?",
-          "options": ["A magic wand", "A regular notebook", "A programming language"],
-          "correctAnswer": "A programming language"
-        },
-        {
-          "questionType": "explainer",
-          "content": "With code, you can build games, apps, websites, and even control robots!"
-        },
-        {
-          "questionType": "explainer",
-          "content": "Ready to write your first line of code? Let's go!"
-        }
+        { "questionType": "explainer", "content": "Welcome to CodeQuest! Let's learn how to talk to computers." },
+        { "questionType": "explainer", "content": "Coding is like writing a set of instructions for a computer to follow." },
+        { "questionType": "explainer", "content": "These instructions are called a 'program'." },
+        { "questionType": "mcq", "content": "What is a set of instructions for a computer called?", "options": [ "A story", "A program", "A menu" ], "correctAnswer": "A program", "explanation": "A program tells the computer exactly what to do, step-by-step." },
+        { "questionType": "explainer", "content": "You use a 'programming language' to write these instructions, just like you use English to talk to friends." },
+        { "questionType": "mcq", "content": "What do we use to write instructions for a computer?", "options": [ "A magic wand", "A regular notebook", "A programming language" ], "correctAnswer": "A programming language" },
+        { "questionType": "explainer", "content": "With code, you can build games, apps, websites, and even control robots!" },
+        { "questionType": "explainer", "content": "Ready to write your first line of code? Let's go!" }
       ]
     },
     {
@@ -53,51 +24,14 @@
       "levelUnlocked": false,
       "levelDescription": "Learn about variables, the boxes for storing information.",
       "questions": [
-        {
-          "questionType": "explainer",
-          "content": "In coding, we need to store information. We use 'variables' to do this."
-        },
-        {
-          "questionType": "explainer",
-          "content": "Think of a variable as a labeled box where you can keep something."
-        },
-        {
-          "questionType": "explainer",
-          "content": "For example, `score = 100` creates a box named `score` and puts the number 100 inside."
-        },
-        {
-          "questionType": "mcq",
-          "content": "What do we use to store information in code?",
-          "options": ["Shelves", "Variables", "Pockets"],
-          "correctAnswer": "Variables"
-        },
-        {
-          "questionType": "explainer",
-          "content": "Variables can hold numbers, text, and other types of data."
-        },
-        {
-          "questionType": "mcq",
-          "content": "If we have `playerName = 'Alex'`, what is stored in the `playerName` variable?",
-          "options": ["The player", "The name Alex", "A number"],
-          "correctAnswer": "The name Alex",
-          "explanation": "Text in code is called a 'string' and is usually put in quotes."
-        },
-        {
-          "questionType": "explainer",
-          "content": "The information inside a variable can change! That's why it's called a 'variable'."
-        },
-        {
-          "questionType": "mcq",
-          "content": "If `score = 50` and then we say `score = 75`, what is the new value in `score`?",
-          "options": ["50", "75", "125"],
-          "correctAnswer": "75"
-        },
-        {
-          "questionType": "arrange",
-          "content": "Write a Python statement to print 'Hello World'",
-          "options": ["Create a box", "Give it a name", "Put something inside", "Print the box"],
-          "correctAnswer": ["Create a box", "Give it a name", "Put something inside", "Print the box"]
-        }
+        { "questionType": "explainer", "content": "In coding, we need to store information. We use 'variables' to do this." },
+        { "questionType": "explainer", "content": "Think of a variable as a labeled box where you can keep something." },
+        { "questionType": "explainer", "content": "For example, `score = 100` creates a box named `score` and puts the number 100 inside." },
+        { "questionType": "mcq", "content": "What do we use to store information in code?", "options": [ "Shelves", "Variables", "Pockets" ], "correctAnswer": "Variables" },
+        { "questionType": "arrange", "content": "Arrange the parts to create a variable `name` with the value `'Zoe'`.", "options": [ "=", "name", "'Zoe'" ], "correctAnswer": [ "name", "=", "'Zoe'" ] },
+        { "questionType": "mcq", "content": "If we have `playerName = 'Alex'`, what is stored in the `playerName` variable?", "options": [ "The player", "The name Alex", "A number" ], "correctAnswer": "The name Alex", "explanation": "Text in code is called a 'string' and is usually put in quotes." },
+        { "questionType": "explainer", "content": "The information inside a variable can change! That's why it's called a 'variable'." },
+        { "questionType": "mcq", "content": "If `score = 50` and then we say `score = 75`, what is the new value in `score`?", "options": [ "50", "75", "125" ], "correctAnswer": "75" }
       ]
     },
     {
@@ -107,56 +41,15 @@
       "levelUnlocked": false,
       "levelDescription": "Practice identifying different types of data.",
       "questions": [
-        {
-          "questionType": "explainer",
-          "content": "Let's look at two common data types: numbers and strings."
-        },
-        {
-          "questionType": "explainer",
-          "content": "Numbers (like 5, 42, 100) are for counting and math. They are also called 'integers'."
-        },
-        {
-          "questionType": "explainer",
-          "content": "Text (like 'hello', 'robot', 'Sarah') is for words. Text is called a 'string' and must be in quotes."
-        },
-        {
-          "questionType": "mcq",
-          "content": "Which of these is a number (integer)?",
-          "options": ["'10'", "10", "ten"],
-          "correctAnswer": "10",
-          "explanation": "Numbers are written without quotes."
-        },
-        {
-          "questionType": "mcq",
-          "content": "Which of these is a string?",
-          "options": ["'Apple'", "Apple", "5"],
-          "correctAnswer": "'Apple'",
-          "explanation": "Strings are text inside quotes."
-        },
-        {
-          "questionType": "mcq",
-          "content": "What type of data is `25`?",
-          "options": ["String", "Number", "Variable"],
-          "correctAnswer": "Number"
-        },
-        {
-          "questionType": "mcq",
-          "content": "What type of data is `'My Dog'`?",
-          "options": ["String", "Number", "Animal"],
-          "correctAnswer": "String"
-        },
-        {
-          "questionType": "mcq",
-          "content": "The variable `age = 12` holds what type of data?",
-          "options": ["A name", "A number", "A string"],
-          "correctAnswer": "A number"
-        },
-        {
-          "questionType": "mcq",
-          "content": "The variable `pet = 'cat'` holds what type of data?",
-          "options": ["A name", "A number", "A string"],
-          "correctAnswer": "A string"
-        }
+        { "questionType": "explainer", "content": "Let's look at two common data types: numbers and strings." },
+        { "questionType": "explainer", "content": "Numbers (like 5, 42) are for counting. They are also called 'integers'." },
+        { "questionType": "explainer", "content": "Text (like 'hello', 'robot') is for words. It is called a 'string' and must be in quotes." },
+        { "questionType": "mcq", "content": "Which of these is a number (integer)?", "options": [ "'10'", "10", "ten" ], "correctAnswer": "10" },
+        { "questionType": "mcq", "content": "Which of these is a string?", "options": [ "'Apple'", "Apple", "5" ], "correctAnswer": "'Apple'" },
+        { "questionType": "mcq", "content": "What type of data is `25`?", "options": [ "String", "Number", "Variable" ], "correctAnswer": "Number" },
+        { "questionType": "mcq", "content": "What type of data is `'My Dog'`?", "options": [ "String", "Number", "Animal" ], "correctAnswer": "String" },
+        { "questionType": "mcq", "content": "The variable `age = 12` holds what type of data?", "options": [ "A name", "A number", "A string" ], "correctAnswer": "A number" },
+        { "questionType": "mcq", "content": "The variable `pet = 'cat'` holds what type of data?", "options": [ "A name", "A number", "A string" ], "correctAnswer": "A string" }
       ]
     },
     {
@@ -167,13 +60,13 @@
       "levelDescription": "More practice with variables and data types.",
       "questions": [
         { "questionType": "explainer", "content": "Let's review! A variable is a container for data." },
-        { "questionType": "explainer", "content": "We give it a name and assign a value using the `=` sign." },
         { "questionType": "mcq", "content": "Which line of code correctly creates a variable named `coins` with the value `50`?", "options": [ "coins: 50", "coins = 50", "50 = coins" ], "correctAnswer": "coins = 50" },
         { "questionType": "explainer", "content": "Remember, strings need quotes, but numbers don't." },
-        { "questionType": "mcq", "content": "What is wrong with this code? `username = 'Leo`", "options": [ "Missing end quote", "Should be a number", "Wrong variable name" ], "correctAnswer": "Missing end quote", "explanation": "Strings need matching quotes at the beginning and end." },
-        { "questionType": "mcq", "content": "What is wrong with this code? `my_age = '15'`", "options": [ "Nothing is wrong", "15 should not be in quotes", "The variable name is bad" ], "correctAnswer": "Nothing is wrong", "explanation": "This is a valid string! If you want to do math with it, you'd write `my_age = 15` instead." },
+        { "questionType": "mcq", "content": "What is wrong with this code? `username = 'Leo`", "options": [ "Missing end quote", "Should be a number", "Wrong variable name" ], "correctAnswer": "Missing end quote" },
+        { "questionType": "mcq", "content": "What is wrong with this code? `my_age = '15'`", "options": [ "Nothing is wrong", "15 should not be in quotes" ], "correctAnswer": "Nothing is wrong", "explanation": "This is a valid string! To do math, you'd write `my_age = 15` instead." },
         { "questionType": "explainer", "content": "Variable names can't have spaces. We often use an underscore `_` or camelCase like `myScore`." },
-        { "questionType": "mcq", "content": "Which is a valid variable name?", "options": [ "my score", "my_score", "1st_score" ], "correctAnswer": "my_score", "explanation": "Variable names can't have spaces or start with a number." }
+        { "questionType": "mcq", "content": "Which is a valid variable name?", "options": [ "my score", "my_score", "1st_score" ], "correctAnswer": "my_score" },
+        { "questionType": "arrange", "content": "Arrange the parts to make a valid variable `team_name`.", "options": [ "team_name", "=", "'Red Dragons'" ], "correctAnswer": [ "team_name", "=", "'Red Dragons'" ] }
       ]
     },
     {
@@ -188,7 +81,7 @@
         { "questionType": "explainer", "content": "In many languages, a comment starts with a `#`. Anything after the `#` on that line is ignored." },
         { "questionType": "mcq", "content": "What symbol often starts a comment in code?", "options": [ "&", "!", "#", "@" ], "correctAnswer": "#" },
         { "questionType": "explainer", "content": "Example: `score = 100 # This is the player's score`" },
-        { "questionType": "mcq", "content": "In the code `x = 5 # Set x to five`, what will the computer do?", "options": [ "Read the whole line", "Only run `x = 5`", "Cause an error" ], "correctAnswer": "Only run `x = 5`", "explanation": "The comment part `# Set x to five` is just for humans to read." },
+        { "questionType": "mcq", "content": "In the code `x = 5 # Set x to five`, what will the computer do?", "options": [ "Read the whole line", "Only run `x = 5`", "Cause an error" ], "correctAnswer": "Only run `x = 5`" },
         { "questionType": "explainer", "content": "Comments are useful for explaining what your code does." },
         { "questionType": "explainer", "content": "Good comments make it easier for you and others to understand your programs later!" }
       ]
@@ -202,12 +95,12 @@
       "questions": [
         { "questionType": "explainer", "content": "The `print()` command is used to display information on the screen." },
         { "questionType": "explainer", "content": "Whatever you put inside the parentheses `()` will be printed." },
-        { "questionType": "explainer", "content": "To print text (a string), you must put it inside single quotes `''`." },
-        { "questionType": "code", "content": "Write a program to print 'Hello, World!' to the screen.", "language": "Python", "starterCode": "print()", "expectedOutput": "Hello, World!", "correctCode": "print('Hello, World!')" },
+        { "questionType": "arrange", "content": "Arrange the parts to print the word 'Welcome'.", "options": [ "print", "(", "'Welcome'", ")" ], "correctAnswer": [ "print", "(", "'Welcome'", ")" ] },
+        { "questionType": "code", "content": "Write a program to print 'Hello, World!' to the screen.", "language": "Python", "starterCode": "", "expectedOutput": "Hello, World!", "correctCode": "print('Hello, World!')" },
         { "questionType": "mcq", "content": "Which command is used to display text?", "options": [ "shout()", "display()", "print()", "text()" ], "correctAnswer": "print()" },
         { "questionType": "code", "content": "Write a program to print the word 'Robot'.", "language": "Python", "starterCode": "", "expectedOutput": "Robot", "correctCode": "print('Robot')" },
-        { "questionType": "mcq", "content": "What is wrong with this code? `print(Hello)`", "options": [ "Wrong command", "Missing quotes", "Wrong parentheses" ], "correctAnswer": "Missing quotes", "explanation": "Text needs to be in quotes to be a string, like `'Hello'`." },
-        { "questionType": "code", "content": "Make the code print the number 100.", "language": "Python", "starterCode": "print()", "expectedOutput": "100", "correctCode": "print(100)" }
+        { "questionType": "mcq", "content": "What is wrong with this code? `print(Hello)`", "options": [ "Wrong command", "Missing quotes", "Wrong parentheses" ], "correctAnswer": "Missing quotes" },
+        { "questionType": "code", "content": "Make the code print the number 100.", "language": "Python", "starterCode": "", "expectedOutput": "100", "correctCode": "print(100)" }
       ]
     },
     {
@@ -219,12 +112,12 @@
       "questions": [
         { "questionType": "explainer", "content": "You can also print the value that's inside a variable!" },
         { "questionType": "explainer", "content": "If `message = 'You win!'`, then `print(message)` will display 'You win!' on the screen." },
-        { "questionType": "mcq", "content": "If `player_name = 'Zoe'`, what will `print(player_name)` show?", "options": [ "player_name", "'Zoe'", "Zoe" ], "correctAnswer": "Zoe", "explanation": "It prints the value inside the variable, not the variable's name." },
+        { "questionType": "mcq", "content": "If `player_name = 'Zoe'`, what will `print(player_name)` show?", "options": [ "player_name", "'Zoe'", "Zoe" ], "correctAnswer": "Zoe" },
         { "questionType": "explainer", "content": "Notice we don't use quotes around the variable name inside `print()`." },
+        { "questionType": "arrange", "content": "Arrange the parts to print the `color` variable.", "options": [ "color = 'red'", "print(color)" ], "correctAnswer": [ "color = 'red'", "print(color)" ] },
         { "questionType": "code", "content": "Complete the code to print the value of the `animal` variable.", "language": "Python", "starterCode": "animal = 'dragon'\n", "expectedOutput": "dragon", "correctCode": "animal = 'dragon'\nprint(animal)" },
         { "questionType": "code", "content": "A variable `high_score` is set to `5000`. Print it.", "language": "Python", "starterCode": "high_score = 5000\n", "expectedOutput": "5000", "correctCode": "high_score = 5000\nprint(high_score)" },
-        { "questionType": "mcq", "content": "What's the difference between `print('name')` and `print(name)`?", "options": [ "No difference", "`print('name')` prints the word 'name', `print(name)` prints the value of the variable `name`", "One is for numbers, one is for strings" ], "correctAnswer": "`print('name')` prints the word 'name', `print(name)` prints the value of the variable `name`" },
-        { "questionType": "explainer", "content": "Excellent! You can now show any information you want on the screen." }
+        { "questionType": "mcq", "content": "What's the difference between `print('name')` and `print(name)`?", "options": [ "No difference", "`print('name')` prints 'name', `print(name)` prints the variable's value" ], "correctAnswer": "`print('name')` prints 'name', `print(name)` prints the variable's value" }
       ]
     },
     {
@@ -235,7 +128,7 @@
       "levelDescription": "Let's do some math with code!",
       "questions": [
         { "questionType": "explainer", "content": "Computers are amazing at math! Let's see how it works." },
-        { "questionType": "explainer", "content": "We use familiar symbols: `+` for addition, `-` for subtraction." },
+        { "questionType": "explainer", "content": "We use `+` for addition and `-` for subtraction." },
         { "questionType": "explainer", "content": "For multiplication, we use an asterisk `*`." },
         { "questionType": "explainer", "content": "For division, we use a forward slash `/`." },
         { "questionType": "mcq", "content": "What does `5 * 3` do?", "options": [ "Adds 5 and 3", "Subtracts 3 from 5", "Multiplies 5 by 3" ], "correctAnswer": "Multiplies 5 by 3" },
@@ -253,12 +146,11 @@
       "questions": [
         { "questionType": "explainer", "content": "We can do math with variables, too!" },
         { "questionType": "explainer", "content": "If `apples = 5` and `oranges = 3`, then `total_fruit = apples + oranges` makes `total_fruit` equal to 8." },
-        { "questionType": "code", "content": "Two variables, `score1` and `score2`, are created. Create a new variable `total_score` that is the sum of both.", "language": "Python", "starterCode": "score1 = 100\nscore2 = 50\n", "expectedOutput": "150", "correctCode": "score1 = 100\nscore2 = 50\ntotal_score = score1 + score2\nprint(total_score)" },
+        { "questionType": "arrange", "content": "Arrange to add `num1` and `num2` and store in `sum`.", "options": [ "num1 = 10", "num2 = 5", "sum = num1 + num2" ], "correctAnswer": [ "num1 = 10", "num2 = 5", "sum = num1 + num2" ] },
+        { "questionType": "code", "content": "Two variables, `score1` and `score2`, are created. Create `total_score` that is the sum of both, then print it.", "language": "Python", "starterCode": "score1 = 100\nscore2 = 50\n", "expectedOutput": "150", "correctCode": "score1 = 100\nscore2 = 50\ntotal_score = score1 + score2\nprint(total_score)" },
         { "questionType": "explainer", "content": "You can also update a variable's own value." },
-        { "questionType": "explainer", "content": "`score = 10` followed by `score = score + 5` will make `score` equal to 15." },
         { "questionType": "mcq", "content": "If `points = 20`, what is the value of `points` after `points = points + 10`?", "options": [ "10", "20", "30" ], "correctAnswer": "30" },
         { "questionType": "code", "content": "A variable `coins` is 25. Add 10 more coins to it and print the new total.", "language": "Python", "starterCode": "coins = 25\n", "expectedOutput": "35", "correctCode": "coins = 25\ncoins = coins + 10\nprint(coins)" },
-        { "questionType": "explainer", "content": "A shortcut for `score = score + 1` is `score += 1`." },
         { "questionType": "mcq", "content": "What is `lives -= 1` a shortcut for?", "options": [ "lives = 1", "lives = lives - 1", "lives = lives + 1" ], "correctAnswer": "lives = lives - 1" }
       ]
     },
@@ -267,16 +159,16 @@
       "chapterNumber": 1,
       "levelType": "mcq",
       "levelUnlocked": false,
-      "levelDescription": "Practice with math operations.",
+      "levelDescription": "Practice with order of operations.",
       "questions": [
         { "questionType": "explainer", "content": "Time for a quick math quiz!" },
         { "questionType": "mcq", "content": "What is the result of `print(4 * 5)`?", "options": [ "4 * 5", "9", "20" ], "correctAnswer": "20" },
         { "questionType": "mcq", "content": "What is the result of `print(15 / 3)`?", "options": [ "5", "12", "18" ], "correctAnswer": "5" },
         { "questionType": "explainer", "content": "Code follows the order of operations (PEMDAS/BODMAS), just like in math class!" },
-        { "questionType": "mcq", "content": "What is the result of `2 + 3 * 4`?", "options": [ "20", "14", "24" ], "correctAnswer": "14", "explanation": "Multiplication happens before addition, so it's `2 + 12`, which is 14." },
-        { "questionType": "mcq", "content": "How would you write '5 times 3, plus 1' in code?", "options": [ "5 * (3 + 1)", "5 * 3 + 1", "(5 * 3) + 1" ], "correctAnswer": "5 * 3 + 1" },
-        { "questionType": "mcq", "content": "What is the result of `(2 + 3) * 4`?", "options": [ "20", "14", "24" ], "correctAnswer": "20", "explanation": "The parentheses make the addition happen first." },
-        { "questionType": "explainer", "content": "You're a math whiz! Let's move on." }
+        { "questionType": "mcq", "content": "What is the result of `2 + 3 * 4`?", "options": [ "20", "14", "24" ], "correctAnswer": "14", "explanation": "Multiplication happens before addition (2 + 12)." },
+        { "questionType": "mcq", "content": "How would you write '5 times 3, plus 1' in code?", "options": [ "5 * (3 + 1)", "5 * 3 + 1" ], "correctAnswer": "5 * 3 + 1" },
+        { "questionType": "mcq", "content": "What is the result of `(2 + 3) * 4`?", "options": [ "20", "14", "24" ], "correctAnswer": "20", "explanation": "Parentheses make the addition happen first." },
+        { "questionType": "explainer", "content": "You're a math whiz!" }
       ]
     },
     {
@@ -289,9 +181,9 @@
         { "questionType": "explainer", "content": "You can 'add' strings together, too! This is called 'concatenation'." },
         { "questionType": "explainer", "content": "Using the `+` sign with strings joins them into one longer string." },
         { "questionType": "explainer", "content": "For example, `'Hello' + ' ' + 'World'` becomes `'Hello World'`." },
-        { "questionType": "mcq", "content": "What is the result of `'pine' + 'apple'`?", "options": [ "pine apple", "pineapple", "An error" ], "correctAnswer": "pineapple", "explanation": "It joins them exactly, with no space in between unless you add one." },
+        { "questionType": "mcq", "content": "What is the result of `'pine' + 'apple'`?", "options": [ "pine apple", "pineapple", "An error" ], "correctAnswer": "pineapple" },
         { "questionType": "mcq", "content": "What do we call joining strings together?", "options": [ "Addition", "Sticking", "Concatenation" ], "correctAnswer": "Concatenation" },
-        { "questionType": "mcq", "content": "How would you create the string 'Good morning'?", "options": [ "'Good' + 'morning'", "'Good' + ' ' + 'morning'", "'Good' + ' morning'" ], "correctAnswer": "'Good' + ' ' + 'morning'", "explanation": "You need to add a string that contains the space." },
+        { "questionType": "mcq", "content": "How would you create the string 'Good morning'?", "options": [ "'Good' + 'morning'", "'Good' + ' ' + 'morning'" ], "correctAnswer": "'Good' + ' ' + 'morning'" },
         { "questionType": "explainer", "content": "You can also join strings from variables." },
         { "questionType": "mcq", "content": "If `greeting = 'Hi'` and `name = 'Sam'`, what is `greeting + ', ' + name`?", "options": [ "Hi, Sam", "Hi,Sam", "Hi Sam" ], "correctAnswer": "Hi, Sam" }
       ]
@@ -304,11 +196,11 @@
       "levelDescription": "Practice string concatenation.",
       "questions": [
         { "questionType": "explainer", "content": "Let's build some sentences with code." },
+        { "questionType": "arrange", "content": "Arrange to print 'My pet is a cat'.", "options": [ "pet = 'cat'", "print('My pet is a ' + pet)" ], "correctAnswer": [ "pet = 'cat'", "print('My pet is a ' + pet)" ] },
         { "questionType": "code", "content": "Join the two variables to create the message 'Code is fun!' and print it.", "language": "Python", "starterCode": "part1 = 'Code is '\npart2 = 'fun!'\n", "expectedOutput": "Code is fun!", "correctCode": "part1 = 'Code is '\npart2 = 'fun!'\nmessage = part1 + part2\nprint(message)" },
-        { "questionType": "explainer", "content": "You can't add a string directly to a number." },
-        { "questionType": "mcq", "content": "What will `'Score: ' + 100` do?", "options": [ "Print 'Score: 100'", "Cause an error", "Print 'Score:100'" ], "correctAnswer": "Cause an error", "explanation": "Most languages require you to convert the number to a string first, like `str(100)`." },
-        { "questionType": "explainer", "content": "To fix this, you can convert the number to a string using a command like `str()`." },
-        { "questionType": "mcq", "content": "If `points = 50`, which code is correct?", "options": [ "'You have ' + points + ' points'", "'You have ' + str(points) + ' points'", "'You have ' + 'points' + ' points'" ], "correctAnswer": "'You have ' + str(points) + ' points'" },
+        { "questionType": "explainer", "content": "You can't add a string directly to a number. It causes an error." },
+        { "questionType": "explainer", "content": "To fix this, you convert the number to a string using a command like `str()`." },
+        { "questionType": "mcq", "content": "If `points = 50`, which code is correct?", "options": [ "'You have ' + points", "'You have ' + str(points)" ], "correctAnswer": "'You have ' + str(points)" },
         { "questionType": "code", "content": "A player's level is 5. Create and print the message 'Player level: 5'.", "language": "Python", "starterCode": "level = 5\n", "expectedOutput": "Player level: 5", "correctCode": "level = 5\nmessage = 'Player level: ' + str(level)\nprint(message)" },
         { "questionType": "explainer", "content": "Great work! You're getting the hang of handling different data types." }
       ]
@@ -324,7 +216,7 @@
         { "questionType": "mcq", "content": "Which of these is a string?", "options": [ "42", "'42'", "forty-two" ], "correctAnswer": "'42'" },
         { "questionType": "mcq", "content": "What does the `print()` command do?", "options": [ "Stores data", "Does math", "Displays output" ], "correctAnswer": "Displays output" },
         { "questionType": "mcq", "content": "What is the result of `7 * 2`?", "options": [ "9", "5", "14" ], "correctAnswer": "14" },
-        { "questionType": "mcq", "content": "What does a comment starting with `#` do?", "options": [ "It's ignored by the computer", "It's displayed on the screen", "It stores a secret value" ], "correctAnswer": "It's ignored by the computer" },
+        { "questionType": "mcq", "content": "What does a comment starting with `#` do?", "options": [ "It's ignored by the computer", "It's displayed on the screen" ], "correctAnswer": "It's ignored by the computer" },
         { "questionType": "mcq", "content": "What is the result of `'code' + 'quest'`?", "options": [ "code quest", "codequest", "An error" ], "correctAnswer": "codequest" },
         { "questionType": "mcq", "content": "What is wrong with the variable name `my age`?", "options": [ "It has a space", "It's too long", "Nothing" ], "correctAnswer": "It has a space" },
         { "questionType": "mcq", "content": "If `x = 10` and then `x = x - 3`, what is the final value of `x`?", "options": [ "10", "3", "7" ], "correctAnswer": "7" }
@@ -339,12 +231,12 @@
       "questions": [
         { "questionType": "explainer", "content": "Let's put everything you've learned together." },
         { "questionType": "explainer", "content": "Your mission: create a player profile and print it." },
-        { "questionType": "explainer", "content": "First, create a variable `player` and set it to your name (as a string)." },
+        { "questionType": "explainer", "content": "First, create a variable `player` and set it to a name (as a string)." },
         { "questionType": "explainer", "content": "Next, create a variable `score` and set it to `1000`." },
         { "questionType": "explainer", "content": "Then, create a variable `level` and set it to `5`." },
-        { "questionType": "explainer", "content": "Finally, print a message like: 'Player: [Your Name], Score: 1000, Level: 5'" },
+        { "questionType": "explainer", "content": "Finally, print a message like: 'Player: [Name], Score: 1000, Level: 5'" },
         { "questionType": "explainer", "content": "Remember to use string concatenation and convert the numbers to strings!" },
-        { "questionType": "code", "content": "Create the `player`, `score`, and `level` variables and print the final profile message.", "language": "Python", "starterCode": "# Create your variables here\n\n# Now create and print the message", "expectedOutput": "Player: [Your Name], Score: 1000, Level: 5", "correctCode": "player = 'TestPlayer'\nscore = 1000\nlevel = 5\nmessage = 'Player: ' + player + ', Score: ' + str(score) + ', Level: ' + str(level)\nprint(message)" },
+        { "questionType": "code", "content": "Create the `player`, `score`, and `level` variables and print the final profile message.", "language": "Python", "starterCode": "# Create your variables here\n\n# Now create and print the message", "expectedOutput": "Player: Test, Score: 1000, Level: 5", "correctCode": "player = 'Test'\nscore = 1000\nlevel = 5\nmessage = 'Player: ' + player + ', Score: ' + str(score) + ', Level: ' + str(level)\nprint(message)" },
         { "questionType": "explainer", "content": "Congratulations! You've completed Chapter 1!" }
       ]
     },
@@ -373,12 +265,12 @@
       "levelDescription": "Practice with comparison operators.",
       "questions": [
         { "questionType": "explainer", "content": "Let's learn the comparison symbols." },
-        { "questionType": "explainer", "content": "`>` means 'greater than'. `<` means 'less than'." },
-        { "questionType": "explainer", "content": "`>=` means 'greater than or equal to'. `<=` means 'less than or equal to'." },
-        { "questionType": "explainer", "content": "`==` means 'is equal to'. `!=` means 'is NOT equal to'." },
+        { "questionType": "explainer", "content": "`>` is 'greater than'. `<` is 'less than'." },
+        { "questionType": "explainer", "content": "`>=` is 'greater than or equal to'. `<=` is 'less than or equal to'." },
+        { "questionType": "explainer", "content": "`==` is 'is equal to'. `!=` is 'is NOT equal to'." },
         { "questionType": "mcq", "content": "What is the result of `7 < 10`?", "options": [ "True", "False" ], "correctAnswer": "True" },
         { "questionType": "mcq", "content": "What is the result of `5 == 5`?", "options": [ "True", "False" ], "correctAnswer": "True" },
-        { "questionType": "mcq", "content": "What is the result of `'hello' != 'world'`?", "options": [ "True", "False" ], "correctAnswer": "True", "explanation": "The string 'hello' is not equal to the string 'world'." },
+        { "questionType": "mcq", "content": "What is the result of `'hello' != 'world'`?", "options": [ "True", "False" ], "correctAnswer": "True" },
         { "questionType": "mcq", "content": "What is the result of `20 <= 15`?", "options": [ "True", "False" ], "correctAnswer": "False" },
         { "questionType": "mcq", "content": "Which symbol means 'not equal to'?", "options": [ "==", "><", "!=" ], "correctAnswer": "!=" }
       ]
@@ -392,12 +284,12 @@
       "questions": [
         { "questionType": "explainer", "content": "Let's write an `if` statement. The structure is `if condition:` followed by indented code." },
         { "questionType": "explainer", "content": "Example: `if score > 50: print('You win!')`" },
-        { "questionType": "mcq", "content": "What happens if `score` is 40 in the code `if score > 50: print('You win!')`?", "options": [ "It prints 'You win!'", "It causes an error", "Nothing is printed" ], "correctAnswer": "Nothing is printed", "explanation": "The condition `40 > 50` is False, so the print command is skipped." },
+        { "questionType": "mcq", "content": "What happens if `score` is 40 in `if score > 50: print('You win!')`?", "options": [ "It prints 'You win!'", "It causes an error", "Nothing is printed" ], "correctAnswer": "Nothing is printed" },
+        { "questionType": "arrange", "content": "Arrange the parts of a basic `if` statement.", "options": [ "if", "health < 10:", "print('Warning!')" ], "correctAnswer": [ "if", "health < 10:", "print('Warning!')" ] },
         { "questionType": "code", "content": "Complete the code to print 'Welcome' if `isFriend` is `True`.", "language": "Python", "starterCode": "isFriend = True\nif isFriend == True:\n  ", "expectedOutput": "Welcome", "correctCode": "isFriend = True\nif isFriend == True:\n  print('Welcome')" },
-        { "questionType": "explainer", "content": "You can use variables in your conditions." },
         { "questionType": "code", "content": "Complete the code to print 'Adult' if `age` is greater than or equal to 18.", "language": "Python", "starterCode": "age = 21\nif age >= 18:\n  ", "expectedOutput": "Adult", "correctCode": "age = 21\nif age >= 18:\n  print('Adult')" },
-        { "questionType": "mcq", "content": "What part of an `if` statement must be indented?", "options": [ "The `if` keyword", "The condition", "The code that runs if the condition is true" ], "correctAnswer": "The code that runs if the condition is true" },
-        { "questionType": "explainer", "content": "Indentation is very important in Python! It tells the computer what code belongs to the `if` statement." }
+        { "questionType": "mcq", "content": "What part of an `if` statement must be indented?", "options": [ "The `if` keyword", "The condition", "The code inside the `if` block" ], "correctAnswer": "The code inside the `if` block" },
+        { "questionType": "explainer", "content": "Indentation is very important! It tells the computer what code belongs to the `if` statement." }
       ]
     },
     {
@@ -409,7 +301,7 @@
       "questions": [
         { "questionType": "explainer", "content": "What if you want to do something when the `if` condition is `False`?" },
         { "questionType": "explainer", "content": "For that, we use the `else` keyword." },
-        { "questionType": "explainer", "content": "Example: `if isRaining == True: print('Take umbrella') else: print('Wear sunglasses')`" },
+        { "questionType": "explainer", "content": "Example: `if isRaining: print('Take umbrella') else: print('Wear sunglasses')`" },
         { "questionType": "mcq", "content": "The code inside the `else` block runs when...", "options": [ "The `if` condition is True", "The `if` condition is False", "Always" ], "correctAnswer": "The `if` condition is False" },
         { "questionType": "mcq", "content": "If `temperature = 10`, what will this code print? `if temperature > 25: print('Hot') else: print('Cold')`", "options": [ "Hot", "Cold", "Nothing" ], "correctAnswer": "Cold" },
         { "questionType": "mcq", "content": "If `temperature = 30`, what will it print?", "options": [ "Hot", "Cold", "Nothing" ], "correctAnswer": "Hot" },
@@ -425,11 +317,10 @@
       "levelDescription": "Practice writing `if-else` statements.",
       "questions": [
         { "questionType": "explainer", "content": "Let's build an `if-else` statement." },
-        { "questionType": "code", "content": "Complete the code. If `password` is '1234', print 'Access granted'. Otherwise (`else`), print 'Access denied'.", "language": "Python", "starterCode": "password = 'qwerty'\nif password == '1234':\n  print('Access granted')\n", "expectedOutput": "Access denied", "correctCode": "password = 'qwerty'\nif password == '1234':\n  print('Access granted')\nelse:\n  print('Access denied')" },
-        { "questionType": "mcq", "content": "What do you need to add to the code to handle the 'Access denied' case?", "options": [ "Another `if`", "An `else`", "A `then`" ], "correctAnswer": "An `else`" },
+        { "questionType": "arrange", "content": "Arrange the `if-else` statement.", "options": [ "if power > 100:", "print('Super!')", "else:", "print('Keep trying!')" ], "correctAnswer": [ "if power > 100:", "print('Super!')", "else:", "print('Keep trying!')" ] },
+        { "questionType": "code", "content": "If `password` is '1234', print 'Access granted'. Otherwise (`else`), print 'Access denied'.", "language": "Python", "starterCode": "password = 'qwerty'\nif password == '1234':\n  print('Access granted')\n", "expectedOutput": "Access denied", "correctCode": "password = 'qwerty'\nif password == '1234':\n  print('Access granted')\nelse:\n  print('Access denied')" },
         { "questionType": "code", "content": "If `coins` are more than 50, print 'You have enough!'. Otherwise, print 'Not enough coins.'.", "language": "Python", "starterCode": "coins = 30\n", "expectedOutput": "Not enough coins.", "correctCode": "coins = 30\nif coins > 50:\n  print('You have enough!')\nelse:\n  print('Not enough coins.')" },
         { "questionType": "explainer", "content": "This is a very common pattern in games and apps!" },
-        { "questionType": "explainer", "content": "Checking if a player has enough points, if a password is correct, or if a level is unlocked all use `if-else`." },
         { "questionType": "mcq", "content": "Does the `else` keyword have a condition after it?", "options": [ "Yes, always", "No, it covers all other cases", "Sometimes" ], "correctAnswer": "No, it covers all other cases" },
         { "questionType": "explainer", "content": "You're getting good at controlling the flow of your program!" }
       ]
@@ -441,10 +332,10 @@
       "levelUnlocked": false,
       "levelDescription": "Quick quiz on `if-else` logic.",
       "questions": [
-        { "questionType": "mcq", "content": "If `x = 10`, what gets printed? `if x != 10: print('A') else: print('B')`", "options": [ "A", "B", "Nothing" ], "correctAnswer": "B", "explanation": "`x != 10` is False, because x IS 10. So the `else` block runs." },
+        { "questionType": "mcq", "content": "If `x = 10`, what gets printed? `if x != 10: print('A') else: print('B')`", "options": [ "A", "B", "Nothing" ], "correctAnswer": "B" },
         { "questionType": "mcq", "content": "If `name = 'Ben'`, what gets printed? `if name == 'Anna': print('Hi Anna') else: print('You are not Anna')`", "options": [ "Hi Anna", "You are not Anna" ], "correctAnswer": "You are not Anna" },
         { "questionType": "explainer", "content": "Think about what makes the condition `True` or `False`." },
-        { "questionType": "mcq", "content": "For `if num < 100: print('Small') else: print('Big')`, what value of `num` will print 'Big'?", "options": [ "99", "50", "100" ], "correctAnswer": "100", "explanation": "100 is not less than 100, so the condition is False and the `else` block runs." },
+        { "questionType": "mcq", "content": "For `if num < 100: print('Small') else: print('Big')`, what value of `num` will print 'Big'?", "options": [ "99", "50", "100" ], "correctAnswer": "100" },
         { "questionType": "mcq", "content": "What value of `num` will print 'Small'?", "options": [ "99", "100", "101" ], "correctAnswer": "99" },
         { "questionType": "explainer", "content": "What if we need to check more than two things?" },
         { "questionType": "explainer", "content": "For that, we have another tool: `elif`!" }
@@ -460,10 +351,10 @@
         { "questionType": "explainer", "content": "`elif` is short for 'else if'." },
         { "questionType": "explainer", "content": "It lets you check another condition if the first `if` was false." },
         { "questionType": "explainer", "content": "Structure: `if... elif... else`" },
-        { "questionType": "explainer", "content": "Example: `if choice == 'A': print('You chose A') elif choice == 'B': print('You chose B') else: print('Invalid choice')`" },
+        { "questionType": "explainer", "content": "Example: `if choice == 'A': ... elif choice == 'B': ... else: ...`" },
         { "questionType": "mcq", "content": "When does the `elif` condition get checked?", "options": [ "Always", "Only if the first `if` condition was True", "Only if the first `if` condition was False" ], "correctAnswer": "Only if the first `if` condition was False" },
-        { "questionType": "mcq", "content": "If `choice = 'B'`, what will the example code print?", "options": [ "You chose A", "You chose B", "Invalid choice" ], "correctAnswer": "You chose B" },
-        { "questionType": "mcq", "content": "If `choice = 'C'`, what will it print?", "options": [ "You chose A", "You chose B", "Invalid choice" ], "correctAnswer": "Invalid choice" },
+        { "questionType": "mcq", "content": "If `choice = 'B'`, what will the example code do?", "options": [ "Run the 'A' block", "Run the 'B' block", "Run the 'else' block" ], "correctAnswer": "Run the 'B' block" },
+        { "questionType": "mcq", "content": "If `choice = 'C'`, what will it do?", "options": [ "Run the 'A' block", "Run the 'B' block", "Run the 'else' block" ], "correctAnswer": "Run the 'else' block" },
         { "questionType": "explainer", "content": "You can have as many `elif` statements as you need!" }
       ]
     },
@@ -475,9 +366,8 @@
       "levelDescription": "Practice writing `if-elif-else` chains.",
       "questions": [
         { "questionType": "explainer", "content": "Let's write a program to check grades." },
-        { "questionType": "explainer", "content": "If score is over 90, grade is 'A'. If it's over 80, grade is 'B'. Otherwise, it's 'C'." },
+        { "questionType": "arrange", "content": "Arrange the grading logic.", "options": [ "if score > 90:", "print('A')", "elif score > 80:", "print('B')", "else:", "print('C')" ], "correctAnswer": [ "if score > 90:", "print('A')", "elif score > 80:", "print('B')", "else:", "print('C')" ] },
         { "questionType": "code", "content": "Complete the code for a score of 85. The correct grade should be 'B'.", "language": "Python", "starterCode": "score = 85\nif score > 90:\n  print('A')\n", "expectedOutput": "B", "correctCode": "score = 85\nif score > 90:\n  print('A')\nelif score > 80:\n  print('B')\nelse:\n  print('C')" },
-        { "questionType": "mcq", "content": "Why does a score of 85 result in 'B' and not 'C'?", "options": [ "The `elif` condition is checked first", "The `elif score > 80` is True", "The `else` is last" ], "correctAnswer": "The `elif score > 80` is True" },
         { "questionType": "mcq", "content": "What would a score of 95 print?", "options": [ "A", "B", "C" ], "correctAnswer": "A" },
         { "questionType": "mcq", "content": "What would a score of 75 print?", "options": [ "A", "B", "C" ], "correctAnswer": "C" },
         { "questionType": "explainer", "content": "The order matters! The computer stops at the first `True` condition it finds." },
@@ -494,11 +384,11 @@
         { "questionType": "explainer", "content": "What if you need to check two things at once?" },
         { "questionType": "explainer", "content": "The `and` keyword checks if BOTH conditions are True." },
         { "questionType": "explainer", "content": "`if score > 50 and time < 10:` - Both must be true to win." },
-        { "questionType": "mcq", "content": "If `x = 5` and `y = 10`, is the condition `x > 3 and y < 12` True or False?", "options": [ "True", "False" ], "correctAnswer": "True", "explanation": "Both parts are true, so the whole condition is true." },
-        { "questionType": "mcq", "content": "If `x = 2` and `y = 10`, is `x > 3 and y < 12` True or False?", "options": [ "True", "False" ], "correctAnswer": "False", "explanation": "`x > 3` is false, so the whole condition becomes false." },
+        { "questionType": "mcq", "content": "If `x = 5` and `y = 10`, is `x > 3 and y < 12` True or False?", "options": [ "True", "False" ], "correctAnswer": "True" },
+        { "questionType": "mcq", "content": "If `x = 2` and `y = 10`, is `x > 3 and y < 12` True or False?", "options": [ "True", "False" ], "correctAnswer": "False" },
         { "questionType": "explainer", "content": "The `or` keyword checks if AT LEAST ONE condition is True." },
-        { "questionType": "explainer", "content": "`if hasKey == True or hasMagicWand == True:` - You can open the door if you have either one." },
-        { "questionType": "mcq", "content": "If `x = 2` and `y = 10`, is `x > 3 or y < 12` True or False?", "options": [ "True", "False" ], "correctAnswer": "True", "explanation": "`y < 12` is true, so the whole condition becomes true." }
+        { "questionType": "explainer", "content": "`if hasKey or hasMagicWand:` - You can open the door if you have either one." },
+        { "questionType": "mcq", "content": "If `x = 2` and `y = 10`, is `x > 3 or y < 12` True or False?", "options": [ "True", "False" ], "correctAnswer": "True" }
       ]
     },
     {
@@ -527,11 +417,11 @@
       "questions": [
         { "questionType": "explainer", "content": "Let's code a condition for entering a secret club." },
         { "questionType": "explainer", "content": "You need to be older than 12 `and` know the secret password 'fizzbuzz'." },
+        { "questionType": "arrange", "content": "Arrange the `and` condition.", "options": [ "if age > 12", "and", "password == 'fizzbuzz':" ], "correctAnswer": [ "if age > 12", "and", "password == 'fizzbuzz':" ] },
         { "questionType": "code", "content": "Complete the `if` statement to check both conditions.", "language": "Python", "starterCode": "age = 15\npassword = 'fizzbuzz'\nif ", "expectedOutput": "Welcome to the club!", "correctCode": "age = 15\npassword = 'fizzbuzz'\nif age > 12 and password == 'fizzbuzz':\n  print('Welcome to the club!')" },
         { "questionType": "explainer", "content": "Now let's check for a weekend day." },
-        { "questionType": "explainer", "content": "A day is a weekend if it is 'Saturday' `or` 'Sunday'." },
-        { "questionType": "code", "content": "Complete the code to print 'It's the weekend!' if `day` is 'Saturday' or 'Sunday'.", "language": "Python", "starterCode": "day = 'Sunday'\nif ", "expectedOutput": "It's the weekend!", "correctCode": "day = 'Sunday'\nif day == 'Saturday' or day == 'Sunday':\n  print('It\\'s the weekend!')" },
-        { "questionType": "mcq", "content": "To check if `num` is between 10 and 20, you would write...", "options": [ "`num > 10 or num < 20`", "`num > 10 and num < 20`", "`num == 10 and num == 20`" ], "correctAnswer": "`num > 10 and num < 20`" },
+        { "questionType": "code", "content": "Complete the code to print 'It's the weekend!' if `day` is 'Saturday' or 'Sunday'.", "language": "Python", "starterCode": "day = 'Sunday'\nif ", "expectedOutput": "It's the weekend!", "correctCode": "day = 'Sunday'\nif day == 'Saturday' or day == 'Sunday':\n  print(\"It's the weekend!\")" },
+        { "questionType": "mcq", "content": "To check if `num` is between 10 and 20, you would write...", "options": [ "`num > 10 or num < 20`", "`num > 10 and num < 20`" ], "correctAnswer": "`num > 10 and num < 20`" },
         { "questionType": "explainer", "content": "Awesome! Your decision-making logic is getting powerful." }
       ]
     },
@@ -546,9 +436,8 @@
         { "questionType": "explainer", "content": "What if we want to ask the user for their name or a number?" },
         { "questionType": "explainer", "content": "We can use the `input()` command." },
         { "questionType": "explainer", "content": "`name = input('What is your name? ')` will display the message and wait for the user to type." },
-        { "questionType": "explainer", "content": "Whatever the user types is then stored in the `name` variable as a string." },
         { "questionType": "mcq", "content": "What command gets information from the user?", "options": [ "get()", "user()", "input()" ], "correctAnswer": "input()" },
-        { "questionType": "mcq", "content": "The `input()` command always returns data as a...", "options": [ "Number", "String", "Boolean" ], "correctAnswer": "String", "explanation": "Even if the user types '10', it will be the string '10', not the number 10." },
+        { "questionType": "mcq", "content": "The `input()` command always returns data as a...", "options": [ "Number", "String", "Boolean" ], "correctAnswer": "String" },
         { "questionType": "explainer", "content": "If you need to treat the input as a number, you have to convert it, like `int(age_string)`." }
       ]
     },
@@ -560,12 +449,12 @@
       "levelDescription": "Combine user input with `if` statements.",
       "questions": [
         { "questionType": "explainer", "content": "Let's make an interactive program." },
+        { "questionType": "arrange", "content": "Arrange the code to ask for a name and greet the user.", "options": [ "name = input('Name? ')", "print('Hello, ' + name)" ], "correctAnswer": [ "name = input('Name? ')", "print('Hello, ' + name)" ] },
         { "questionType": "code", "content": "Ask the user for their name. If their name is 'admin', print 'Welcome, admin'.", "language": "Python", "starterCode": "name = input('Enter name: ')\n", "expectedOutput": "Welcome, admin", "correctCode": "name = input('Enter name: ')\nif name == 'admin':\n  print('Welcome, admin')" },
         { "questionType": "explainer", "content": "Remember to convert input to a number if you want to do math." },
         { "questionType": "code", "content": "Ask the user for their age. If they are 18 or older, print 'You can vote'.", "language": "Python", "starterCode": "age_str = input('Enter your age: ')\n", "expectedOutput": "You can vote", "correctCode": "age_str = input('Enter your age: ')\nage_num = int(age_str)\nif age_num >= 18:\n  print('You can vote')" },
-        { "questionType": "mcq", "content": "Why do we need `age_num = int(age_str)` in the previous example?", "options": [ "To make it a string", "To compare a number with another number", "To make it shorter" ], "correctAnswer": "To compare a number with another number" },
-        { "questionType": "explainer", "content": "Your programs can now talk to the user and react based on their answers!" },
-        { "questionType": "explainer", "content": "This is a huge step in making fun and useful applications." }
+        { "questionType": "mcq", "content": "Why do we need `age_num = int(age_str)` in the previous example?", "options": [ "To make it a string", "To compare a number with another number" ], "correctAnswer": "To compare a number with another number" },
+        { "questionType": "explainer", "content": "Your programs can now talk to the user and react based on their answers!" }
       ]
     },
     {
@@ -583,6 +472,389 @@
         { "questionType": "explainer", "content": "Don't forget to convert the user's input to a number!" },
         { "questionType": "code", "content": "Create the number guessing game logic.", "language": "Python", "starterCode": "secret_number = 7\n# Ask for user input and store it\n\n# Convert the input to a number\n\n# Check if the guess is correct", "expectedOutput": "You got it! or Nope, try again!", "correctCode": "secret_number = 7\nguess_str = input('Guess the number: ')\nguess_num = int(guess_str)\nif guess_num == secret_number:\n  print('You got it!')\nelse:\n  print('Nope, try again!')" },
         { "questionType": "explainer", "content": "AMAZING! You have completed Chapter 2 and are a real decision-maker in code!" }
+      ]
+    },
+    {
+      "levelNumber": 29, "chapterNumber": 3, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Introduction to loops.",
+      "questions": [
+        { "questionType": "explainer", "content": "Welcome to Chapter 3! Let's learn about repetition." },
+        { "questionType": "explainer", "content": "Doing the same thing over and over is boring for humans, but computers are great at it!" },
+        { "questionType": "explainer", "content": "We use 'loops' to make the computer repeat a block of code." },
+        { "questionType": "mcq", "content": "What is used to repeat code?", "options": [ "A variable", "An if statement", "A loop" ], "correctAnswer": "A loop" },
+        { "questionType": "explainer", "content": "The first type of loop we'll learn is the `for` loop." },
+        { "questionType": "explainer", "content": "A `for` loop is perfect when you know exactly how many times you want to repeat something." },
+        { "questionType": "mcq", "content": "If you want to print 'Hello' 5 times, which is the best tool?", "options": [ "An if statement", "A for loop", "A variable" ], "correctAnswer": "A for loop" },
+        { "questionType": "explainer", "content": "Get ready to make your code do a lot more with a lot less typing!" }
+      ]
+    },
+    {
+      "levelNumber": 30, "chapterNumber": 3, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Understanding the `range()` function.",
+      "questions": [
+        { "questionType": "explainer", "content": "`for` loops often use the `range()` function to count." },
+        { "questionType": "explainer", "content": "`range(3)` creates a sequence of numbers: 0, 1, 2." },
+        { "questionType": "mcq", "content": "What numbers are in `range(4)`?", "options": [ "1, 2, 3, 4", "0, 1, 2, 3", "0, 1, 2, 3, 4" ], "correctAnswer": "0, 1, 2, 3", "explanation": "It starts at 0 and goes up to (but does not include) the number." },
+        { "questionType": "mcq", "content": "How many times will a loop with `range(5)` run?", "options": [ "4", "5", "6" ], "correctAnswer": "5" },
+        { "questionType": "mcq", "content": "Which `range` would you use to repeat something 10 times?", "options": [ "range(9)", "range(10)", "range(11)" ], "correctAnswer": "range(10)" },
+        { "questionType": "explainer", "content": "The variable in the `for` loop will hold each number from the range, one at a time." },
+        { "questionType": "explainer", "content": "In `for i in range(3):`, `i` will be 0, then 1, then 2." },
+        { "questionType": "mcq", "content": "What is the last number `i` will be in `for i in range(2):`?", "options": [ "0", "1", "2" ], "correctAnswer": "1" }
+      ]
+    },
+    {
+      "levelNumber": 31, "chapterNumber": 3, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Writing your first `for` loop.",
+      "questions": [
+        { "questionType": "explainer", "content": "The syntax for a for loop is `for variable in sequence:`." },
+        { "questionType": "arrange", "content": "Arrange the parts of a basic `for` loop.", "options": [ "for", "count", "in", "range(3):", "print(count)" ], "correctAnswer": [ "for", "count", "in", "range(3):", "print(count)" ] },
+        { "questionType": "code", "content": "Write a loop that prints 'Looping!' 3 times.", "language": "Python", "starterCode": "", "expectedOutput": "Looping!\nLooping!\nLooping!", "correctCode": "for i in range(3):\n  print('Looping!')" },
+        { "questionType": "explainer", "content": "The code inside the loop must be indented, just like with `if` statements." },
+        { "questionType": "mcq", "content": "What will `for i in range(2): print('Hi')` print?", "options": [ "Hi", "HiHi", "Hi\nHi" ], "correctAnswer": "Hi\nHi" },
+        { "questionType": "explainer", "content": "Let's print the loop variable itself." },
+        { "questionType": "code", "content": "Write a loop that prints the numbers 0, 1, and 2.", "language": "Python", "starterCode": "", "expectedOutput": "0\n1\n2", "correctCode": "for i in range(3):\n  print(i)" },
+        { "questionType": "explainer", "content": "You've successfully automated your code!" }
+      ]
+    },
+    {
+      "levelNumber": 32, "chapterNumber": 3, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Introducing lists to store multiple items.",
+      "questions": [
+        { "questionType": "explainer", "content": "What if you want to store a collection of items, like a shopping list or a list of friends?" },
+        { "questionType": "explainer", "content": "For this, we use a 'list'!" },
+        { "questionType": "explainer", "content": "A list is created with square brackets `[]`, and items are separated by commas." },
+        { "questionType": "explainer", "content": "Example: `friends = ['Zoe', 'Alex', 'Sam']`" },
+        { "questionType": "mcq", "content": "Which of these correctly creates a list of numbers?", "options": [ "{1, 2, 3}", "[1, 2, 3]", "(1, 2, 3)" ], "correctAnswer": "[1, 2, 3]" },
+        { "questionType": "explainer", "content": "You can access items in a list using their 'index', which starts at 0." },
+        { "questionType": "mcq", "content": "In `pets = ['cat', 'dog', 'fish']`, what is `pets[0]`?", "options": [ "'cat'", "'dog'", "'fish'" ], "correctAnswer": "'cat'" },
+        { "questionType": "mcq", "content": "In `pets = ['cat', 'dog', 'fish']`, what is `pets[2]`?", "options": [ "'cat'", "'dog'", "'fish'" ], "correctAnswer": "'fish'" }
+      ]
+    },
+    {
+      "levelNumber": 33, "chapterNumber": 3, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Practice creating and accessing lists.",
+      "questions": [
+        { "questionType": "mcq", "content": "Which is a valid list of strings?", "options": [ "[red, green, blue]", "['red', 'green', 'blue']" ], "correctAnswer": "['red', 'green', 'blue']" },
+        { "questionType": "mcq", "content": "Given `scores = [10, 20, 30]`, what is `scores[1]`?", "options": [ "10", "20", "30" ], "correctAnswer": "20" },
+        { "questionType": "explainer", "content": "Lists can hold different data types, but usually we keep them the same." },
+        { "questionType": "mcq", "content": "What is the index of 'banana' in `fruits = ['apple', 'banana', 'cherry']`?", "options": [ "0", "1", "2" ], "correctAnswer": "1" },
+        { "questionType": "arrange", "content": "Arrange the code to create a list and access the first item.", "options": [ "items = [5, 10, 15]", "first_item = items[0]" ], "correctAnswer": [ "items = [5, 10, 15]", "first_item = items[0]" ] },
+        { "questionType": "mcq", "content": "What is the last item in `letters = ['a', 'b', 'c', 'd']`?", "options": [ "letters[2]", "letters[3]", "letters[4]" ], "correctAnswer": "letters[3]" },
+        { "questionType": "explainer", "content": "Now that we know about lists, we can loop through them!" }
+      ]
+    },
+    {
+      "levelNumber": 34, "chapterNumber": 3, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Looping through lists.",
+      "questions": [
+        { "questionType": "explainer", "content": "`for` loops are perfect for going through each item in a list." },
+        { "questionType": "explainer", "content": "Example: `for fruit in fruits: print(fruit)`" },
+        { "questionType": "arrange", "content": "Arrange the loop to print each color.", "options": [ "colors = ['red', 'blue']", "for c in colors:", "print(c)" ], "correctAnswer": [ "colors = ['red', 'blue']", "for c in colors:", "print(c)" ] },
+        { "questionType": "code", "content": "Write a loop that prints each name from the `friends` list on a new line.", "language": "Python", "starterCode": "friends = ['Leo', 'Mia', 'Noah']\n", "expectedOutput": "Leo\nMia\nNoah", "correctCode": "friends = ['Leo', 'Mia', 'Noah']\nfor friend in friends:\n  print(friend)" },
+        { "questionType": "explainer", "content": "This is much better than printing each one manually!" },
+        { "questionType": "mcq", "content": "What does `for number in [10, 20]: print(number)` do?", "options": [ "Prints '10 20'", "Prints '10\n20'", "Causes an error" ], "correctAnswer": "Prints '10\n20'" },
+        { "questionType": "code", "content": "Loop through the `letters` list and print each one.", "language": "Python", "starterCode": "letters = ['x', 'y', 'z']\n", "expectedOutput": "x\ny\nz", "correctCode": "letters = ['x', 'y', 'z']\nfor letter in letters:\n  print(letter)" },
+        { "questionType": "explainer", "content": "You can loop through anything that is a sequence, even a string!" }
+      ]
+    },
+    {
+      "levelNumber": 35, "chapterNumber": 3, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Introduction to `while` loops.",
+      "questions": [
+        { "questionType": "explainer", "content": "There's another kind of loop called a `while` loop." },
+        { "questionType": "explainer", "content": "A `while` loop keeps repeating AS LONG AS its condition is `True`." },
+        { "questionType": "explainer", "content": "It's perfect when you don't know how many times you need to loop." },
+        { "questionType": "mcq", "content": "Which loop is better for 'keep running until the player's health is 0'?", "options": [ "for loop", "while loop" ], "correctAnswer": "while loop" },
+        { "questionType": "explainer", "content": "Syntax: `while condition:`" },
+        { "questionType": "explainer", "content": "It's very important to make sure the condition eventually becomes `False`, or the loop will run forever! This is an 'infinite loop'." },
+        { "questionType": "mcq", "content": "What is it called when a loop never ends?", "options": [ "A forever loop", "An infinite loop", "A super loop" ], "correctAnswer": "An infinite loop" },
+        { "questionType": "explainer", "content": "To avoid this, we usually change a variable inside the loop that affects the condition." }
+      ]
+    },
+    {
+      "levelNumber": 36, "chapterNumber": 3, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Understanding `while` loop conditions.",
+      "questions": [
+        { "questionType": "explainer", "content": "Let's look at a `while` loop that counts to 3." },
+        { "questionType": "explainer", "content": "`count = 0\nwhile count < 3:\n  print(count)\n  count += 1`" },
+        { "questionType": "mcq", "content": "In the example, what makes the loop eventually stop?", "options": [ "`print(count)`", "`count = 0`", "`count += 1`" ], "correctAnswer": "`count += 1`", "explanation": "Increasing `count` ensures it will eventually be 3, making the condition `3 < 3` false." },
+        { "questionType": "mcq", "content": "How many times does the `print` statement run?", "options": [ "2", "3", "4" ], "correctAnswer": "3" },
+        { "questionType": "mcq", "content": "What is the last number printed?", "options": [ "1", "2", "3" ], "correctAnswer": "2" },
+        { "questionType": "explainer", "content": "The `while` loop checks the condition *before* each repetition." },
+        { "questionType": "mcq", "content": "If `x = 5`, will `while x < 5:` run at all?", "options": [ "Yes, once", "No, it will be skipped", "It will run forever" ], "correctAnswer": "No, it will be skipped" }
+      ]
+    },
+    {
+      "levelNumber": 37, "chapterNumber": 3, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Writing `while` loops.",
+      "questions": [
+        { "questionType": "explainer", "content": "Time to write your own `while` loop." },
+        { "questionType": "arrange", "content": "Arrange the parts of a `while` loop.", "options": [ "x = 5", "while x > 0:", "print(x)", "x -= 1" ], "correctAnswer": [ "x = 5", "while x > 0:", "print(x)", "x -= 1" ] },
+        { "questionType": "code", "content": "Write a `while` loop that prints 'Loading...' as long as a variable `is_loading` is `True`. Make sure to set it to `False` after one print to stop the loop.", "language": "Python", "starterCode": "is_loading = True\n", "expectedOutput": "Loading...", "correctCode": "is_loading = True\nwhile is_loading:\n  print('Loading...')\n  is_loading = False" },
+        { "questionType": "explainer", "content": "This is often used in games to have a main game loop." },
+        { "questionType": "explainer", "content": "`while game_is_running:`\n  `# update player`\n  `# draw screen`" },
+        { "questionType": "code", "content": "Use a `while` loop to count down from 3 to 1.", "language": "Python", "starterCode": "num = 3\n", "expectedOutput": "3\n2\n1", "correctCode": "num = 3\nwhile num > 0:\n  print(num)\n  num -= 1" },
+        { "questionType": "explainer", "content": "Great! You now know two powerful ways to repeat code." }
+      ]
+    },
+    {
+      "levelNumber": 38, "chapterNumber": 3, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "`for` vs. `while` loops.",
+      "questions": [
+        { "questionType": "explainer", "content": "When should you use a `for` loop, and when a `while` loop?" },
+        { "questionType": "mcq", "content": "To loop through all items in a list, which is usually better?", "options": [ "for loop", "while loop" ], "correctAnswer": "for loop" },
+        { "questionType": "mcq", "content": "To repeat code exactly 100 times, which is better?", "options": [ "for loop", "while loop" ], "correctAnswer": "for loop" },
+        { "questionType": "mcq", "content": "To keep asking a user for a password until they get it right, which is better?", "options": [ "for loop", "while loop" ], "correctAnswer": "while loop" },
+        { "questionType": "mcq", "content": "To print the numbers from 1 to 5, which could you use?", "options": [ "Only a for loop", "Only a while loop", "Both" ], "correctAnswer": "Both", "explanation": "A for loop with range(1, 6) is easier, but a while loop can also do it!" },
+        { "questionType": "explainer", "content": "Choosing the right loop makes your code easier to read and understand." },
+        { "questionType": "mcq", "content": "Which loop is more at risk of causing an 'infinite loop' if you're not careful?", "options": [ "for loop", "while loop" ], "correctAnswer": "while loop", "explanation": "It's easier to forget to update the condition in a while loop." }
+      ]
+    },
+    {
+      "levelNumber": 39, "chapterNumber": 3, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Learn to break out of loops.",
+      "questions": [
+        { "questionType": "explainer", "content": "Sometimes you need to stop a loop early." },
+        { "questionType": "explainer", "content": "For this, we can use the `break` keyword." },
+        { "questionType": "explainer", "content": "`break` immediately exits the current loop, no matter what." },
+        { "questionType": "explainer", "content": "It's often used inside an `if` statement." },
+        { "questionType": "mcq", "content": "What does the `break` keyword do?", "options": [ "Pauses the loop", "Exits the loop immediately", "Skips one iteration" ], "correctAnswer": "Exits the loop immediately" },
+        { "questionType": "mcq", "content": "If you are searching a list for the name 'Mia', and you find it, what should you do?", "options": [ "Keep searching", "`break` out of the loop", "Restart the loop" ], "correctAnswer": "`break` out of the loop" },
+        { "questionType": "explainer", "content": "Example: `for name in names: if name == 'Mia': print('Found her!'); break`" },
+        { "questionType": "explainer", "content": "This makes your code more efficient by not doing extra work." }
+      ]
+    },
+    {
+      "levelNumber": 40, "chapterNumber": 3, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Practice using `break`.",
+      "questions": [
+        { "questionType": "explainer", "content": "Let's use `break` to stop a countdown." },
+        { "questionType": "code", "content": "Loop from 10 down to 1. If the number is 5, print 'Launch!' and `break` the loop.", "language": "Python", "starterCode": "for i in range(10, 0, -1):\n  print(i)\n", "expectedOutput": "10\n9\n8\n7\n6\nLaunch!", "correctCode": "for i in range(10, 0, -1):\n  print(i)\n  if i == 6:\n    print('Launch!')\n    break" },
+        { "questionType": "explainer", "content": "Let's find the first 'special number' in a list." },
+        { "questionType": "code", "content": "Loop through the `numbers` list. If you find the number 42, print 'Found it!' and `break`.", "language": "Python", "starterCode": "numbers = [10, 25, 30, 42, 55, 60]\n", "expectedOutput": "Found it!", "correctCode": "numbers = [10, 25, 30, 42, 55, 60]\nfor num in numbers:\n  if num == 42:\n    print('Found it!')\n    break" },
+        { "questionType": "mcq", "content": "In the previous example, will the number 55 be checked?", "options": [ "Yes", "No" ], "correctAnswer": "No", "explanation": "The loop breaks when it finds 42, so it never gets to 55." },
+        { "questionType": "arrange", "content": "Arrange the code to find the first negative number.", "options": [ "for num in data:", "if num < 0:", "print('Found negative')", "break" ], "correctAnswer": [ "for num in data:", "if num < 0:", "print('Found negative')", "break" ] },
+        { "questionType": "explainer", "content": "Using `break` gives you precise control over your loops." }
+      ]
+    },
+    {
+      "levelNumber": 41, "chapterNumber": 3, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Chapter 3 Review.",
+      "questions": [
+        { "questionType": "mcq", "content": "Which loop is best for iterating through a list?", "options": [ "`for` loop", "`while` loop" ], "correctAnswer": "`for` loop" },
+        { "questionType": "mcq", "content": "What numbers does `range(2)` produce?", "options": [ "1, 2", "0, 1", "0, 1, 2" ], "correctAnswer": "0, 1" },
+        { "questionType": "mcq", "content": "What symbol creates a list?", "options": [ "()", "{}", "[]" ], "correctAnswer": "[]" },
+        { "questionType": "mcq", "content": "In `items = ['a', 'b', 'c']`, what is `items[2]`?", "options": [ "'a'", "'b'", "'c'" ], "correctAnswer": "'c'" },
+        { "questionType": "mcq", "content": "What is a loop that never ends called?", "options": [ "A long loop", "An infinite loop", "A broken loop" ], "correctAnswer": "An infinite loop" },
+        { "questionType": "mcq", "content": "Which keyword immediately exits a loop?", "options": [ "`stop`", "`end`", "`break`" ], "correctAnswer": "`break`" },
+        { "questionType": "mcq", "content": "What must be true for a `while` loop to continue?", "options": [ "Its condition is True", "Its condition is False", "It has a `break`" ], "correctAnswer": "Its condition is True" },
+        { "questionType": "explainer", "content": "You are now a master of repetition!" }
+      ]
+    },
+    {
+      "levelNumber": 42, "chapterNumber": 3, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Chapter 3 Final Challenge!",
+      "questions": [
+        { "questionType": "explainer", "content": "Let's combine everything from this chapter." },
+        { "questionType": "explainer", "content": "You have a list of scores: `scores = [65, 88, 92, 74, 100, 59]`" },
+        { "questionType": "explainer", "content": "Your mission is to loop through the list and count how many scores are 'passing' (greater than or equal to 70)." },
+        { "questionType": "explainer", "content": "Create a `passing_count` variable and set it to 0 before the loop." },
+        { "questionType": "explainer", "content": "Inside the loop, use an `if` statement to check each score." },
+        { "questionType": "explainer", "content": "If a score is passing, add 1 to `passing_count`." },
+        { "questionType": "explainer", "content": "After the loop, print the final count." },
+        { "questionType": "code", "content": "Write the code to count the passing scores and print the total.", "language": "Python", "starterCode": "scores = [65, 88, 92, 74, 100, 59]\n", "expectedOutput": "4", "correctCode": "scores = [65, 88, 92, 74, 100, 59]\npassing_count = 0\nfor score in scores:\n  if score >= 70:\n    passing_count += 1\nprint(passing_count)" },
+        { "questionType": "explainer", "content": "Incredible! You just wrote a data analysis program! Well done on finishing Chapter 3!" }
+      ]
+    },
+    {
+      "levelNumber": 43, "chapterNumber": 4, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Introduction to Functions.",
+      "questions": [
+        { "questionType": "explainer", "content": "Welcome to Chapter 4! Let's get organized." },
+        { "questionType": "explainer", "content": "Sometimes you want to use the same block of code over and over in different places." },
+        { "questionType": "explainer", "content": "Instead of copy-pasting, we can put that code in a 'function'." },
+        { "questionType": "explainer", "content": "A function is a named, reusable block of code that performs a specific task." },
+        { "questionType": "mcq", "content": "What is a named, reusable block of code?", "options": [ "A variable", "A loop", "A function" ], "correctAnswer": "A function" },
+        { "questionType": "explainer", "content": "Think of it like a recipe. You write the recipe once (define the function), and then you can use it anytime you want (call the function)." },
+        { "questionType": "mcq", "content": "Why are functions useful?", "options": [ "They make code faster", "They keep code organized and prevent repetition", "They are the only way to do math" ], "correctAnswer": "They keep code organized and prevent repetition" },
+        { "questionType": "explainer", "content": "Functions will make your programs much cleaner and more powerful." }
+      ]
+    },
+    {
+      "levelNumber": 44, "chapterNumber": 4, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Defining and calling functions.",
+      "questions": [
+        { "questionType": "explainer", "content": "To create a function, you 'define' it using the `def` keyword." },
+        { "questionType": "explainer", "content": "Syntax: `def function_name():` followed by indented code." },
+        { "questionType": "mcq", "content": "What keyword starts a function definition?", "options": [ "`function`", "`def`", "`create`" ], "correctAnswer": "`def`" },
+        { "questionType": "explainer", "content": "Defining a function doesn't run the code inside it. It just saves it for later." },
+        { "questionType": "explainer", "content": "To run the code, you must 'call' the function by writing its name followed by parentheses: `function_name()`." },
+        { "questionType": "mcq", "content": "Which of these is a function call?", "options": [ "`def my_function():`", "`my_function`", "`my_function()`" ], "correctAnswer": "`my_function()`" },
+        { "questionType": "arrange", "content": "Arrange the code to define and then call a function.", "options": [ "def say_hi():", "print('Hi!')", "say_hi()" ], "correctAnswer": [ "def say_hi():", "print('Hi!')", "say_hi()" ] },
+        { "questionType": "mcq", "content": "If you just write `def show_score(): print(100)`, what happens?", "options": [ "100 is printed", "Nothing happens yet", "An error occurs" ], "correctAnswer": "Nothing happens yet", "explanation": "The function has been defined, but not called." }
+      ]
+    },
+    {
+      "levelNumber": 45, "chapterNumber": 4, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Write your first function.",
+      "questions": [
+        { "questionType": "explainer", "content": "Let's create a function that displays a welcome message." },
+        { "questionType": "code", "content": "Define a function named `show_welcome` that prints 'Welcome to the game!'.", "language": "Python", "starterCode": "", "expectedOutput": "", "correctCode": "def show_welcome():\n  print('Welcome to the game!')" },
+        { "questionType": "explainer", "content": "Now, let's call it to see the message." },
+        { "questionType": "code", "content": "Define the `show_welcome` function, and then call it.", "language": "Python", "starterCode": "def show_welcome():\n  print('Welcome to the game!')\n", "expectedOutput": "Welcome to the game!", "correctCode": "def show_welcome():\n  print('Welcome to the game!')\n\nshow_welcome()" },
+        { "questionType": "explainer", "content": "You can call a function as many times as you want." },
+        { "questionType": "code", "content": "Define a function `display_star` that prints a single star '*'. Then call it 3 times.", "language": "Python", "starterCode": "", "expectedOutput": "*\n*\n*", "correctCode": "def display_star():\n  print('*')\n\ndisplay_star()\ndisplay_star()\ndisplay_star()" },
+        { "questionType": "explainer", "content": "See how much repetition that saved? That's the power of functions!" }
+      ]
+    },
+    {
+      "levelNumber": 46, "chapterNumber": 4, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Passing information to functions with parameters.",
+      "questions": [
+        { "questionType": "explainer", "content": "What if we want our function to be more flexible? Like greeting different people by name." },
+        { "questionType": "explainer", "content": "We can pass information into a function using 'parameters'." },
+        { "questionType": "explainer", "content": "Parameters are special variables that you put inside the function's parentheses when you define it." },
+        { "questionType": "explainer", "content": "Example: `def greet(name):` Here, `name` is a parameter." },
+        { "questionType": "mcq", "content": "What is the parameter in `def show_score(points):`?", "options": [ "`def`", "`show_score`", "`points`" ], "correctAnswer": "`points`" },
+        { "questionType": "explainer", "content": "When you call the function, you provide a value for the parameter. This value is called an 'argument'." },
+        { "questionType": "mcq", "content": "In the function call `greet('Alex')`, what is the argument?", "options": [ "`greet`", "'Alex'", "`()`" ], "correctAnswer": "'Alex'" },
+        { "questionType": "explainer", "content": "So, parameters are the empty boxes in the function definition, and arguments are the things you put in the boxes when you call it." }
+      ]
+    },
+    {
+      "levelNumber": 47, "chapterNumber": 4, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Practice with parameters and arguments.",
+      "questions": [
+        { "questionType": "explainer", "content": "`def greet(name):\n  print('Hello, ' + name)`" },
+        { "questionType": "mcq", "content": "Using the function above, what will `greet('Mia')` print?", "options": [ "Hello, name", "Hello, Mia", "Hello, " ], "correctAnswer": "Hello, Mia" },
+        { "questionType": "explainer", "content": "You can have multiple parameters, separated by commas." },
+        { "questionType": "explainer", "content": "`def add(num1, num2):\n  print(num1 + num2)`" },
+        { "questionType": "mcq", "content": "Using the `add` function, what will `add(5, 3)` print?", "options": [ "5", "3", "8" ], "correctAnswer": "8" },
+        { "questionType": "mcq", "content": "What is the argument for the `num2` parameter in `add(10, 20)`?", "options": [ "10", "20", "30" ], "correctAnswer": "20" },
+        { "questionType": "arrange", "content": "Arrange the code to define and call a function with one parameter.", "options": [ "def show_item(item):", "print(item)", "show_item('sword')" ], "correctAnswer": [ "def show_item(item):", "print(item)", "show_item('sword')" ] },
+        { "questionType": "explainer", "content": "Parameters make your functions incredibly versatile!" }
+      ]
+    },
+    {
+      "levelNumber": 48, "chapterNumber": 4, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Write functions that use parameters.",
+      "questions": [
+        { "questionType": "explainer", "content": "Let's build some functions that take arguments." },
+        { "questionType": "code", "content": "Define a function `print_number` that takes one parameter `num` and prints it.", "language": "Python", "starterCode": "", "expectedOutput": "", "correctCode": "def print_number(num):\n  print(num)" },
+        { "questionType": "code", "content": "Define the `print_number` function, then call it with the argument `42`.", "language": "Python", "starterCode": "def print_number(num):\n  print(num)\n", "expectedOutput": "42", "correctCode": "def print_number(num):\n  print(num)\n\nprint_number(42)" },
+        { "questionType": "explainer", "content": "Let's make a function to multiply two numbers." },
+        { "questionType": "code", "content": "Define a function `multiply` that takes two parameters, `x` and `y`, and prints their product.", "language": "Python", "starterCode": "", "expectedOutput": "15", "correctCode": "def multiply(x, y):\n  print(x * y)\n\nmultiply(5, 3)" },
+        { "questionType": "mcq", "content": "What would `multiply(10, 2)` print?", "options": [ "10", "2", "20" ], "correctAnswer": "20" },
+        { "questionType": "explainer", "content": "You're now passing data around like a pro!" }
+      ]
+    },
+    {
+      "levelNumber": 49, "chapterNumber": 4, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Getting information back from functions with `return`.",
+      "questions": [
+        { "questionType": "explainer", "content": "So far our functions have only printed things. What if we want to get a value *back* from a function?" },
+        { "questionType": "explainer", "content": "For this, we use the `return` keyword." },
+        { "questionType": "explainer", "content": "`return` sends a value back to where the function was called. It also immediately ends the function." },
+        { "questionType": "mcq", "content": "What keyword sends a value back from a function?", "options": [ "`send`", "`give`", "`return`" ], "correctAnswer": "`return`" },
+        { "questionType": "explainer", "content": "Example: `def add(x, y): return x + y`" },
+        { "questionType": "explainer", "content": "Now, you can store the result in a variable: `result = add(5, 4)`. The variable `result` would now be 9." },
+        { "questionType": "mcq", "content": "Using the `add` function above, what is the value of `total` in `total = add(10, 1)`?", "options": [ "10", "1", "11" ], "correctAnswer": "11" },
+        { "questionType": "explainer", "content": "Functions that `return` values are incredibly useful for calculations." }
+      ]
+    },
+    {
+      "levelNumber": 50, "chapterNumber": 4, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Understanding `return` values.",
+      "questions": [
+        { "questionType": "explainer", "content": "`def double(num):\n  return num * 2`" },
+        { "questionType": "mcq", "content": "What is the value of `x` after `x = double(5)`?", "options": [ "5", "2", "10" ], "correctAnswer": "10" },
+        { "questionType": "mcq", "content": "What does `print(double(7))` display?", "options": [ "7", "14", "Nothing" ], "correctAnswer": "14" },
+        { "questionType": "explainer", "content": "`def get_greeting(name):\n  return 'Hello, ' + name`" },
+        { "questionType": "mcq", "content": "What is the value of `message` after `message = get_greeting('Ben')`?", "options": [ "'Hello, '", "'Ben'", "'Hello, Ben'" ], "correctAnswer": "'Hello, Ben'" },
+        { "questionType": "mcq", "content": "What happens after a `return` statement is run?", "options": [ "The function continues", "The function stops immediately", "The function prints the value" ], "correctAnswer": "The function stops immediately" },
+        { "questionType": "arrange", "content": "Arrange the code to define a function that returns a value and then use it.", "options": [ "def square(n):", "return n * n", "result = square(4)", "print(result)" ], "correctAnswer": [ "def square(n):", "return n * n", "result = square(4)", "print(result)" ] },
+        { "questionType": "explainer", "content": "Great! `return` is a fundamental building block of programming." }
+      ]
+    },
+    {
+      "levelNumber": 51, "chapterNumber": 4, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Write functions that `return` values.",
+      "questions": [
+        { "questionType": "explainer", "content": "Time to write some functions that give back answers." },
+        { "questionType": "code", "content": "Define a function `get_half` that takes a number and `return`s half of it.", "language": "Python", "starterCode": "", "expectedOutput": "", "correctCode": "def get_half(num):\n  return num / 2" },
+        { "questionType": "code", "content": "Using the `get_half` function, calculate half of 20 and store it in a variable called `answer`.", "language": "Python", "starterCode": "def get_half(num):\n  return num / 2\n", "expectedOutput": "10.0", "correctCode": "def get_half(num):\n  return num / 2\n\nanswer = get_half(20)\nprint(answer)" },
+        { "questionType": "explainer", "content": "Let's create a function that builds a full name." },
+        { "questionType": "code", "content": "Define a function `full_name` that takes `first` and `last` as parameters and `return`s them joined with a space.", "language": "Python", "starterCode": "", "expectedOutput": "Zoe Smith", "correctCode": "def full_name(first, last):\n  return first + ' ' + last\n\nplayer_name = full_name('Zoe', 'Smith')\nprint(player_name)" },
+        { "questionType": "mcq", "content": "If you have `def is_positive(num): ...`, what data type should it return?", "options": [ "Number", "String", "Boolean (True/False)" ], "correctAnswer": "Boolean (True/False)" },
+        { "questionType": "explainer", "content": "You are now building reusable tools for your programs!" }
+      ]
+    },
+    {
+      "levelNumber": 52, "chapterNumber": 4, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "`print` vs `return`",
+      "questions": [
+        { "questionType": "explainer", "content": "What's the difference between `print` and `return` inside a function?" },
+        { "questionType": "explainer", "content": "`print` displays a value to the screen for humans to see." },
+        { "questionType": "explainer", "content": "`return` sends a value back to the code so it can be stored or used in other calculations." },
+        { "questionType": "mcq", "content": "Which one lets you store the result in a variable?", "options": [ "`print`", "`return`" ], "correctAnswer": "`return`" },
+        { "questionType": "mcq", "content": "If you want to show a message to the user, you should use...", "options": [ "`print`", "`return`" ], "correctAnswer": "`print`" },
+        { "questionType": "mcq", "content": "If you want to calculate a value and use it in another part of your program, you should use...", "options": [ "`print`", "`return`" ], "correctAnswer": "`return`" },
+        { "questionType": "explainer", "content": "Consider `def add_and_print(x,y): print(x+y)` and `def add_and_return(x,y): return x+y`" },
+        { "questionType": "mcq", "content": "Which of these lines of code will cause an error?", "options": [ "`result = add_and_return(2, 2)`", "`result = add_and_print(2, 2)`" ], "correctAnswer": "`result = add_and_print(2, 2)`", "explanation": "A function that only prints doesn't return a value to be stored, so `result` would be empty (or 'None')." }
+      ]
+    },
+    {
+      "levelNumber": 53, "chapterNumber": 4, "levelType": "explainer", "levelUnlocked": false,
+      "levelDescription": "Introduction to code scope.",
+      "questions": [
+        { "questionType": "explainer", "content": "Let's talk about where variables live. This is called 'scope'." },
+        { "questionType": "explainer", "content": "A variable created inside a function only exists inside that function. This is 'local scope'." },
+        { "questionType": "explainer", "content": "`def my_func():\n  local_var = 10\nprint(local_var)` <- This would cause an error!" },
+        { "questionType": "mcq", "content": "Can you access a variable created inside a function from outside of it?", "options": [ "Yes", "No" ], "correctAnswer": "No" },
+        { "questionType": "explainer", "content": "A variable created outside of any function has 'global scope' and can be accessed from anywhere." },
+        { "questionType": "mcq", "content": "`global_var = 100\ndef my_func():\n  print(global_var)` Will this work?", "options": [ "Yes", "No" ], "correctAnswer": "Yes" },
+        { "questionType": "explainer", "content": "This separation is good! It prevents functions from accidentally changing each other's variables." },
+        { "questionType": "explainer", "content": "Think of it like this: the thoughts in your head are local, but a public sign is global." }
+      ]
+    },
+    {
+      "levelNumber": 54, "chapterNumber": 4, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Practice with function scope.",
+      "questions": [
+        { "questionType": "explainer", "content": "`def set_message():\n  msg = 'Hello'\n\nset_message()\nprint(msg)`" },
+        { "questionType": "mcq", "content": "What will the code above do?", "options": [ "Print 'Hello'", "Cause an error" ], "correctAnswer": "Cause an error", "explanation": "`msg` is local to the function and can't be printed outside." },
+        { "questionType": "explainer", "content": "To get the value out, you need to `return` it." },
+        { "questionType": "arrange", "content": "Arrange the code to correctly get the message out of the function.", "options": [ "def get_message():", "msg = 'Success!'", "return msg", "my_message = get_message()", "print(my_message)" ], "correctAnswer": [ "def get_message():", "msg = 'Success!'", "return msg", "my_message = get_message()", "print(my_message)" ] },
+        { "questionType": "explainer", "content": "Now let's try using a global variable." },
+        { "questionType": "code", "content": "A global variable `player_name` exists. Define a function `greet_player` that prints 'Hello, ' followed by the `player_name`. Then call the function.", "language": "Python", "starterCode": "player_name = 'Captain Code'\n\n", "expectedOutput": "Hello, Captain Code", "correctCode": "player_name = 'Captain Code'\n\ndef greet_player():\n  print('Hello, ' + player_name)\n\ngreet_player()" },
+        { "questionType": "explainer", "content": "Understanding scope is key to writing bug-free programs." }
+      ]
+    },
+    {
+      "levelNumber": 55, "chapterNumber": 4, "levelType": "mcq", "levelUnlocked": false,
+      "levelDescription": "Chapter 4 Review.",
+      "questions": [
+        { "questionType": "mcq", "content": "What keyword is used to define a function?", "options": [ "`func`", "`def`", "`create`" ], "correctAnswer": "`def`" },
+        { "questionType": "mcq", "content": "What is a variable in a function definition called?", "options": [ "An argument", "A parameter", "A return" ], "correctAnswer": "A parameter" },
+        { "questionType": "mcq", "content": "What is the value you pass to a function called?", "options": [ "An argument", "A parameter", "A return" ], "correctAnswer": "An argument" },
+        { "questionType": "mcq", "content": "What does the `return` keyword do?", "options": [ "Prints a value", "Stops the program", "Sends a value back from a function" ], "correctAnswer": "Sends a value back from a function" },
+        { "questionType": "mcq", "content": "A variable created inside a function has...", "options": [ "Global scope", "Local scope", "No scope" ], "correctAnswer": "Local scope" },
+        { "questionType": "mcq", "content": "After defining `def my_func(): ...`, how do you run it?", "options": [ "`run my_func`", "`my_func()`", "`call my_func`" ], "correctAnswer": "`my_func()`" },
+        { "questionType": "mcq", "content": "What is the main benefit of using functions?", "options": [ "To make code longer", "To make code organized and reusable", "To use more variables" ], "correctAnswer": "To make code organized and reusable" }
+      ]
+    },
+    {
+      "levelNumber": 56, "chapterNumber": 4, "levelType": "code", "levelUnlocked": false,
+      "levelDescription": "Chapter 4 Final Challenge!",
+      "questions": [
+        { "questionType": "explainer", "content": "Time for the final challenge of the basics!" },
+        { "questionType": "explainer", "content": "Your mission: create a function that checks if a player has leveled up." },
+        { "questionType": "explainer", "content": "Define a function `check_level_up` that takes two parameters: `current_xp` and `needed_xp`." },
+        { "questionType": "explainer", "content": "Inside the function, if `current_xp` is greater than or equal to `needed_xp`, it should `return True`." },
+        { "questionType": "explainer", "content": "Otherwise, it should `return False`." },
+        { "questionType": "explainer", "content": "After defining the function, call it with some sample data and use the returned value in an `if` statement to print 'Level Up!' or 'Keep going!'." },
+        { "questionType": "code", "content": "Write the `check_level_up` function and the code to test it.", "language": "Python", "starterCode": "# Define your function here\n\n# Call the function and use an if statement\nplayer_xp = 1200\nxp_for_next_level = 1000\n", "expectedOutput": "Level Up!", "correctCode": "def check_level_up(current_xp, needed_xp):\n  if current_xp >= needed_xp:\n    return True\n  else:\n    return False\n\nplayer_xp = 1200\nxp_for_next_level = 1000\n\nif check_level_up(player_xp, xp_for_next_level):\n  print('Level Up!')\nelse:\n  print('Keep going!')" },
+        { "questionType": "explainer", "content": "YOU ARE A CODING CHAMPION! You have mastered the fundamentals. Amazing work!" }
       ]
     }
   ]

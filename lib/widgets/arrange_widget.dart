@@ -106,6 +106,7 @@ class _ArrangeWidgetState extends State<ArrangeWidget> with TickerProviderStateM
                               child: GestureDetector(
                                 onTap: () => _onAnswerTokenTap(token),
                                 child: Container(
+                                  margin: const EdgeInsets.all(8),
                                   padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
                                   decoration: BoxDecoration(
                                     color: Colors.blue[200],
