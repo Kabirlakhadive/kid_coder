@@ -30,6 +30,11 @@ class _LevelPageState extends State<LevelPage> {
   bool _showEndWindow = false;
   bool _mcqAnswered = false;
 
+  // Score tracking
+  int _totalQuestions = 0;
+  int _correctAnswers = 0;
+  Map<int, bool> _questionResults = {}; // Track results by question index
+
   @override
   void initState() {
     super.initState();
@@ -63,6 +68,15 @@ class _LevelPageState extends State<LevelPage> {
         _showEndWindow = true;
       });
     }
+  }
+
+  void _onQuestionAnswered(bool isCorrect) {
+    setState(() {
+      _questionResults[_currentIndex] = isCorrect;
+      if (isCorrect) {
+        _correctAnswers++;
+      }
+    });
   }
 
   Future _loadLevelsData() async {
@@ -103,6 +117,15 @@ class _LevelPageState extends State<LevelPage> {
               final currentLevel = levels[levelNumber - 1];
               final currentLevelQuestions = currentLevel["questions"] as List;
               _totalItems = currentLevelQuestions.length;
+              
+              // Initialize total questions count (only count scorable questions)
+              if (_totalQuestions == 0) {
+                _totalQuestions = currentLevelQuestions.where((q) => 
+                  q["questionType"] == "mcq" || 
+                  q["questionType"] == "arrange" || 
+                  q["questionType"] == "code"
+                ).length;
+              }
       
               double progress = (_totalItems == 0)
                   ? 0
@@ -184,9 +207,10 @@ class _LevelPageState extends State<LevelPage> {
                                       options: options,
                                       correctAnswer: correctAnswer,
                                       explanation: explanation,
-                                      onAnswered: () {
+                                      onAnswered: (isCorrect) {
                                         setState(() {
                                           _mcqAnswered = true;
+                                          _onQuestionAnswered(isCorrect);
                                         });
                                       },
                                     ),
@@ -195,10 +219,18 @@ class _LevelPageState extends State<LevelPage> {
                                   // Show the code widget for code questions
                                   return SizedBox(
                                     width: MediaQuery.of(context).size.width,
-                                    child: CodeWidget(levelData: {
-                                      ...currentLevel,
-                                      'questions': [question],
-                                    }),
+                                    child: CodeWidget(
+                                      levelData: {
+                                        ...currentLevel,
+                                        'questions': [question],
+                                      },
+                                      onAnswered: (isCorrect) {
+                                        setState(() {
+                                          _mcqAnswered = true;
+                                          _onQuestionAnswered(isCorrect);
+                                        });
+                                      },
+                                    ),
                                   );
                                 } else if (questionType == "arrange") {
                                   final content = question["content"] ?? "";
@@ -212,9 +244,10 @@ class _LevelPageState extends State<LevelPage> {
                                       tokens: options,
                                       correctOrder: correctOrder,
                                       explanation: explanation,
-                                      onAnswered: () {
+                                      onAnswered: (isCorrect) {
                                         setState(() {
                                           _mcqAnswered = true;
+                                          _onQuestionAnswered(isCorrect);
                                         });
                                       },
                                     ),
@@ -245,7 +278,8 @@ class _LevelPageState extends State<LevelPage> {
                           final questionType = question["questionType"];
                           final isMcq = questionType == "mcq";
                           final isArrange = questionType == "arrange";
-                          final nextEnabled = (!isMcq && !isArrange) || _mcqAnswered;
+                          final isCode = questionType == "code";
+                          final nextEnabled = (!isMcq && !isArrange && !isCode) || _mcqAnswered;
                           return Opacity(
                             opacity: nextEnabled ? 1.0 : 0.5,
                             child: IgnorePointer(
@@ -279,6 +313,8 @@ class _LevelPageState extends State<LevelPage> {
                   if (_showEndWindow)
                     Positioned.fill(
                       child: LevelEndWindow(
+                        totalQuestions: _totalQuestions,
+                        correctAnswers: _correctAnswers,
                         onClose: () {
                           Navigator.of(context).pop({'levelCompleted': widget.level});
                         },

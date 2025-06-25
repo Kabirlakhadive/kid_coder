@@ -1,0 +1,19 @@
+{
+    "listOfPractice": [
+        {
+            "practiceNumber": 1,
+            "practiceUnlocked": true,
+            "practiceDescription": "Introduction to what coding is and why it's cool.",
+            "questions": [      
+                      { "questionType": "explainer", "content": "Welcome to CodeQuest! Let's learn how to talk to computers." },
+                      { "questionType": "explainer", "content": "Coding is like writing a set of instructions for a computer to follow." },
+                      { "questionType": "explainer", "content": "These instructions are called a 'program'." },
+                      { "questionType": "mcq", "content": "What is a set of instructions for a computer called?", "options": [ "A story", "A program", "A menu" ], "correctAnswer": "A program", "explanation": "A program tells the computer exactly what to do, step-by-step." },
+                      { "questionType": "explainer", "content": "You use a 'programming language' to write these instructions, just like you use English to talk to friends." },
+                      { "questionType": "mcq", "content": "What do we use to write instructions for a computer?", "options": [ "A magic wand", "A regular notebook", "A programming language" ], "correctAnswer": "A programming language" },
+                      { "questionType": "explainer", "content": "With code, you can build games, apps, websites, and even control robots!" },
+                      { "questionType": "explainer", "content": "Ready to write your first line of code? Let's go!" }
+            ]
+        }
+    ]
+}

@@ -5,7 +5,7 @@ class ArrangeWidget extends StatefulWidget {
   final List<String> tokens;
   final List<String> correctOrder;
   final String? explanation;
-  final VoidCallback? onAnswered;
+  final Function(bool)? onAnswered;
   const ArrangeWidget({
     super.key,
     required this.prompt,
@@ -52,7 +52,9 @@ class _ArrangeWidgetState extends State<ArrangeWidget> with TickerProviderStateM
       _answered = true;
       _isCorrect = _answerTokens.length == widget.correctOrder.length &&
           List.generate(_answerTokens.length, (i) => _answerTokens[i] == widget.correctOrder[i]).every((e) => e);
-      if (widget.onAnswered != null) widget.onAnswered!();
+      if (widget.onAnswered != null) {
+        widget.onAnswered!(_isCorrect);
+      }
     });
   }
 

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class CodeWidget extends StatefulWidget {
   final Map<String, dynamic> levelData;
-  const CodeWidget({Key? key, required this.levelData}) : super(key: key);
+  final Function(bool)? onAnswered;
+  const CodeWidget({Key? key, required this.levelData, this.onAnswered}) : super(key: key);
 
   @override
   State<CodeWidget> createState() => _CodeWidgetState();
@@ -25,13 +26,17 @@ class _CodeWidgetState extends State<CodeWidget> {
         _output = null;
         _checked = true;
       });
+      if (widget.onAnswered != null) {
+        widget.onAnswered!(false);
+      }
       return;
     }
     final correctCode = codeQuestion['correctCode']?.trim();
     final expectedOutput = codeQuestion['expectedOutput'];
     final userCode = _controller.text.trim();
     String normalize(String s) => s.replaceAll(RegExp(r'\s+'), '');
-    if (normalize(userCode) == normalize(correctCode ?? '')) {
+    final isCorrect = normalize(userCode) == normalize(correctCode ?? '');
+    if (isCorrect) {
       setState(() {
         _output = expectedOutput;
         _error = null;
@@ -43,6 +48,9 @@ class _CodeWidgetState extends State<CodeWidget> {
         _error = 'Incorrect code. Try again!';
         _checked = true;
       });
+    }
+    if (widget.onAnswered != null) {
+      widget.onAnswered!(isCorrect);
     }
   }
 
